@@ -1,0 +1,2796 @@
+fileFormatVersion: 2
+guid: 787a2aa6f14c415409f0badc1d9d7d3d
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -8476986687214454358
+    second: Sprite_Gerrera_0
+  - first:
+      213: -4373670899185137698
+    second: Sprite_Gerrera_1
+  - first:
+      213: -6211090174737911803
+    second: Sprite_Gerrera_2
+  - first:
+      213: 158502285188553898
+    second: Sprite_Gerrera_3
+  - first:
+      213: -3357876240196449896
+    second: Sprite_Gerrera_4
+  - first:
+      213: 6012823754483597684
+    second: Sprite_Gerrera_5
+  - first:
+      213: -8799280277766835100
+    second: Sprite_Gerrera_6
+  - first:
+      213: 4897824832834078146
+    second: Sprite_Gerrera_7
+  - first:
+      213: -197462959695625762
+    second: Sprite_Gerrera_8
+  - first:
+      213: -5152212969784345934
+    second: Sprite_Gerrera_9
+  - first:
+      213: 4271411287306893317
+    second: Sprite_Gerrera_10
+  - first:
+      213: 6014931612076361448
+    second: Sprite_Gerrera_11
+  - first:
+      213: -6764899556617800193
+    second: Sprite_Gerrera_12
+  - first:
+      213: 7826057960634212178
+    second: Sprite_Gerrera_13
+  - first:
+      213: 9154983994455479686
+    second: Sprite_Gerrera_14
+  - first:
+      213: -6994920797144987491
+    second: Sprite_Gerrera_15
+  - first:
+      213: 1067891586552055952
+    second: Sprite_Gerrera_16
+  - first:
+      213: -4536796601120522012
+    second: Sprite_Gerrera_17
+  - first:
+      213: 7336506393250434866
+    second: Sprite_Gerrera_18
+  - first:
+      213: -1417842223744178442
+    second: Sprite_Gerrera_19
+  - first:
+      213: 7512009232304674309
+    second: Sprite_Gerrera_20
+  - first:
+      213: 8703284309769710868
+    second: Sprite_Gerrera_21
+  - first:
+      213: -6732651595054202244
+    second: Sprite_Gerrera_22
+  - first:
+      213: -4204265140999562877
+    second: Sprite_Gerrera_23
+  - first:
+      213: -6852149491458904227
+    second: Sprite_Gerrera_24
+  - first:
+      213: -5614641437416929483
+    second: Sprite_Gerrera_25
+  - first:
+      213: -8336164940313018198
+    second: Sprite_Gerrera_26
+  - first:
+      213: -7744945872441618070
+    second: Sprite_Gerrera_27
+  - first:
+      213: -7469490564326392124
+    second: Sprite_Gerrera_28
+  - first:
+      213: -2940694900594060409
+    second: Sprite_Gerrera_29
+  - first:
+      213: 7291290300717988702
+    second: Sprite_Gerrera_30
+  - first:
+      213: 5136200037740024922
+    second: Sprite_Gerrera_31
+  - first:
+      213: 8734012261396473452
+    second: Sprite_Gerrera_32
+  - first:
+      213: -1875491886673734034
+    second: Sprite_Gerrera_33
+  - first:
+      213: -1981902849521301148
+    second: Sprite_Gerrera_34
+  - first:
+      213: -8704755082998701262
+    second: Sprite_Gerrera_35
+  - first:
+      213: -2362753710135228322
+    second: Sprite_Gerrera_36
+  - first:
+      213: -8521155212657414351
+    second: Sprite_Gerrera_37
+  - first:
+      213: -8910206256365516495
+    second: Sprite_Gerrera_38
+  - first:
+      213: -4181567106283362550
+    second: Sprite_Gerrera_39
+  - first:
+      213: 2321914788050419213
+    second: Sprite_Gerrera_40
+  - first:
+      213: 1658881513521054845
+    second: Sprite_Gerrera_41
+  - first:
+      213: -3793836570151921321
+    second: Sprite_Gerrera_42
+  - first:
+      213: 3790680978304841486
+    second: Sprite_Gerrera_43
+  - first:
+      213: -1032035624673252811
+    second: Sprite_Gerrera_44
+  - first:
+      213: -1036302193652857300
+    second: Sprite_Gerrera_45
+  - first:
+      213: 6164531638843589438
+    second: Sprite_Gerrera_46
+  - first:
+      213: -7524297157021136030
+    second: Sprite_Gerrera_47
+  - first:
+      213: 2882012093167574994
+    second: Sprite_Gerrera_48
+  - first:
+      213: -4378992962044678290
+    second: Sprite_Gerrera_49
+  - first:
+      213: 5687532359027897676
+    second: Sprite_Gerrera_50
+  - first:
+      213: 8161937288389991606
+    second: Sprite_Gerrera_51
+  - first:
+      213: -6743981414781624661
+    second: Sprite_Gerrera_52
+  - first:
+      213: -7569469162821647083
+    second: Sprite_Gerrera_53
+  - first:
+      213: 2646128305940661032
+    second: Sprite_Gerrera_54
+  - first:
+      213: -3551243966371820227
+    second: Sprite_Gerrera_55
+  - first:
+      213: 6713947118409511447
+    second: Sprite_Gerrera_56
+  - first:
+      213: -4458174199236159358
+    second: Sprite_Gerrera_57
+  - first:
+      213: -2740533208493735565
+    second: Sprite_Gerrera_58
+  - first:
+      213: 870181194365264653
+    second: Sprite_Gerrera_59
+  - first:
+      213: -7570945878986357433
+    second: Sprite_Gerrera_60
+  - first:
+      213: 2670889070345609346
+    second: Sprite_Gerrera_61
+  - first:
+      213: -7046288671076486690
+    second: Sprite_Gerrera_62
+  - first:
+      213: -2174806039473931046
+    second: Sprite_Gerrera_63
+  - first:
+      213: 4572931489294275382
+    second: Sprite_Gerrera_64
+  - first:
+      213: 8420069590726052808
+    second: Sprite_Gerrera_65
+  - first:
+      213: 8154949862460618230
+    second: Sprite_Gerrera_66
+  - first:
+      213: -6676134799565072275
+    second: Sprite_Gerrera_67
+  - first:
+      213: 8510416498523753839
+    second: Sprite_Gerrera_68
+  - first:
+      213: 8366365123528548383
+    second: Sprite_Gerrera_69
+  - first:
+      213: 7236919369477324808
+    second: Sprite_Gerrera_70
+  - first:
+      213: 6456176193098594913
+    second: Sprite_Gerrera_71
+  - first:
+      213: 4397298418866954823
+    second: Sprite_Gerrera_72
+  - first:
+      213: 1277403819838696668
+    second: Sprite_Gerrera_73
+  - first:
+      213: -1468561114894042280
+    second: Sprite_Gerrera_74
+  - first:
+      213: 522065848139359701
+    second: Sprite_Gerrera_75
+  - first:
+      213: -1269387002228113106
+    second: Sprite_Gerrera_76
+  - first:
+      213: 8486477106837493240
+    second: Sprite_Gerrera_77
+  - first:
+      213: 2549502244487560488
+    second: Sprite_Gerrera_78
+  - first:
+      213: -1117885769703968234
+    second: Sprite_Gerrera_79
+  - first:
+      213: -785997634166986159
+    second: Sprite_Gerrera_80
+  - first:
+      213: -5303148691093514468
+    second: Sprite_Gerrera_81
+  - first:
+      213: -7732415377647435420
+    second: Sprite_Gerrera_82
+  - first:
+      213: -5392962907574155759
+    second: Sprite_Gerrera_83
+  - first:
+      213: 2026348790864159754
+    second: Sprite_Gerrera_84
+  - first:
+      213: -8389116970238672429
+    second: Sprite_Gerrera_85
+  - first:
+      213: -921507772737508304
+    second: Sprite_Gerrera_86
+  - first:
+      213: -1353680100037788369
+    second: Sprite_Gerrera_87
+  - first:
+      213: 61086823370045266
+    second: Sprite_Gerrera_88
+  - first:
+      213: -3238883154245988870
+    second: Sprite_Gerrera_89
+  - first:
+      213: -259893156783046487
+    second: Sprite_Gerrera_90
+  - first:
+      213: -955913948233294658
+    second: Sprite_Gerrera_91
+  - first:
+      213: 4765777216961235845
+    second: Sprite_Gerrera_92
+  - first:
+      213: -4402699095676765675
+    second: Sprite_Gerrera_93
+  - first:
+      213: -2618448845752013921
+    second: Sprite_Gerrera_94
+  - first:
+      213: 5872464271868399456
+    second: Sprite_Gerrera_95
+  - first:
+      213: 1818740373491831632
+    second: Sprite_Gerrera_96
+  - first:
+      213: 7078842966319437787
+    second: Sprite_Gerrera_97
+  - first:
+      213: -9176244816298092114
+    second: Sprite_Gerrera_98
+  - first:
+      213: -9135989608232361067
+    second: Sprite_Gerrera_99
+  - first:
+      213: -1404122709441978236
+    second: Sprite_Gerrera_100
+  - first:
+      213: 642848026527229202
+    second: Sprite_Gerrera_101
+  - first:
+      213: -1008805151923610092
+    second: Sprite_Gerrera_102
+  - first:
+      213: 3896004698217380638
+    second: Sprite_Gerrera_103
+  - first:
+      213: 5432030911975351269
+    second: Sprite_Gerrera_104
+  - first:
+      213: 2265491144205845449
+    second: Sprite_Gerrera_105
+  - first:
+      213: 382664025831247231
+    second: Sprite_Gerrera_106
+  - first:
+      213: 2262459298952207877
+    second: Sprite_Gerrera_107
+  - first:
+      213: 2491411995606886648
+    second: Sprite_Gerrera_108
+  - first:
+      213: 1406928578561289458
+    second: Sprite_Gerrera_109
+  - first:
+      213: 2787539139330972819
+    second: Sprite_Gerrera_110
+  - first:
+      213: -3178232551268064991
+    second: Sprite_Gerrera_111
+  - first:
+      213: -4955051460388672522
+    second: Sprite_Gerrera_112
+  - first:
+      213: 4478779976783829251
+    second: Sprite_Gerrera_113
+  - first:
+      213: 2223485714257935313
+    second: Sprite_Gerrera_114
+  - first:
+      213: 144195467081401201
+    second: Sprite_Gerrera_115
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 16
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: iOS
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WindowsStoreApps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Sprite_Gerrera_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 704
+        width: 69
+        height: 44
+      alignment: 9
+      pivot: {x: 0.37, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aa9fdde5581bb5a80800000000000000
+      internalID: -8476986687214454358
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_Gerrera_1
+      rect:
+        serializedVersion: 2
+        x: 69
+        y: 704
+        width: 69
+        height: 44
+      alignment: 9
+      pivot: {x: 0.37, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ed74b996d799d43c0800000000000000
+      internalID: -4373670899185137698
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_Gerrera_2
+      rect:
+        serializedVersion: 2
+        x: 138
+        y: 704
+        width: 69
+        height: 44
+      alignment: 9
+      pivot: {x: 0.37, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 500f3d2d466cdc9a0800000000000000
+      internalID: -6211090174737911803
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_Gerrera_3
+      rect:
+        serializedVersion: 2
+        x: 207
+        y: 704
+        width: 69
+        height: 44
+      alignment: 9
+      pivot: {x: 0.37, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aac50c41dfc133200800000000000000
+      internalID: 158502285188553898
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_Gerrera_4
+      rect:
+        serializedVersion: 2
+        x: 276
+        y: 704
+        width: 69
+        height: 44
+      alignment: 9
+      pivot: {x: 0.37, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 899cd5fa95d6661d0800000000000000
+      internalID: -3357876240196449896
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_Gerrera_5
+      rect:
+        serializedVersion: 2
+        x: 345
+        y: 704
+        width: 69
+        height: 44
+      alignment: 9
+      pivot: {x: 0.37, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 471860fe857d17350800000000000000
+      internalID: 6012823754483597684
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_Gerrera_6
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 660
+        width: 69
+        height: 44
+      alignment: 9
+      pivot: {x: 0.37, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4647b9c353da2e580800000000000000
+      internalID: -8799280277766835100
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_Gerrera_7
+      rect:
+        serializedVersion: 2
+        x: 69
+        y: 660
+        width: 69
+        height: 44
+      alignment: 9
+      pivot: {x: 0.37, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2c589255cb198f340800000000000000
+      internalID: 4897824832834078146
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_Gerrera_8
+      rect:
+        serializedVersion: 2
+        x: 138
+        y: 660
+        width: 69
+        height: 44
+      alignment: 9
+      pivot: {x: 0.37, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ed18b0ffb78724df0800000000000000
+      internalID: -197462959695625762
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_Gerrera_9
+      rect:
+        serializedVersion: 2
+        x: 207
+        y: 660
+        width: 69
+        height: 44
+      alignment: 9
+      pivot: {x: 0.37, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2baf7d00a99af78b0800000000000000
+      internalID: -5152212969784345934
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_Gerrera_10
+      rect:
+        serializedVersion: 2
+        x: 276
+        y: 660
+        width: 69
+        height: 44
+      alignment: 9
+      pivot: {x: 0.37, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 50875855fe9174b30800000000000000
+      internalID: 4271411287306893317
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_Gerrera_11
+      rect:
+        serializedVersion: 2
+        x: 345
+        y: 660
+        width: 69
+        height: 44
+      alignment: 9
+      pivot: {x: 0.37, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8e64416ce64597350800000000000000
+      internalID: 6014931612076361448
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_Gerrera_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 616
+        width: 69
+        height: 44
+      alignment: 9
+      pivot: {x: 0.37, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ff5399af1bf3e12a0800000000000000
+      internalID: -6764899556617800193
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_Gerrera_13
+      rect:
+        serializedVersion: 2
+        x: 69
+        y: 616
+        width: 69
+        height: 44
+      alignment: 9
+      pivot: {x: 0.37, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 25f583f304ebb9c60800000000000000
+      internalID: 7826057960634212178
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_Gerrera_14
+      rect:
+        serializedVersion: 2
+        x: 138
+        y: 616
+        width: 69
+        height: 44
+      alignment: 9
+      pivot: {x: 0.37, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 685d7e110790d0f70800000000000000
+      internalID: 9154983994455479686
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_Gerrera_15
+      rect:
+        serializedVersion: 2
+        x: 207
+        y: 616
+        width: 69
+        height: 44
+      alignment: 9
+      pivot: {x: 0.37, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d984e2e789c0dee90800000000000000
+      internalID: -6994920797144987491
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_Gerrera_16
+      rect:
+        serializedVersion: 2
+        x: 276
+        y: 616
+        width: 69
+        height: 44
+      alignment: 9
+      pivot: {x: 0.37, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 09840137db9e1de00800000000000000
+      internalID: 1067891586552055952
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_Gerrera_17
+      rect:
+        serializedVersion: 2
+        x: 345
+        y: 616
+        width: 69
+        height: 44
+      alignment: 9
+      pivot: {x: 0.37, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4e0030c378f0a01c0800000000000000
+      internalID: -4536796601120522012
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_Gerrera_18
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 572
+        width: 69
+        height: 44
+      alignment: 9
+      pivot: {x: 0.37, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 23f0316b1b180d560800000000000000
+      internalID: 7336506393250434866
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_Gerrera_19
+      rect:
+        serializedVersion: 2
+        x: 69
+        y: 572
+        width: 69
+        height: 44
+      alignment: 9
+      pivot: {x: 0.37, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6f6ad227200d25ce0800000000000000
+      internalID: -1417842223744178442
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_Gerrera_20
+      rect:
+        serializedVersion: 2
+        x: 138
+        y: 572
+        width: 69
+        height: 44
+      alignment: 9
+      pivot: {x: 0.37, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 50699f0b894004860800000000000000
+      internalID: 7512009232304674309
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_Gerrera_21
+      rect:
+        serializedVersion: 2
+        x: 207
+        y: 572
+        width: 69
+        height: 44
+      alignment: 9
+      pivot: {x: 0.37, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 41ded0fb7f648c870800000000000000
+      internalID: 8703284309769710868
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_Gerrera_22
+      rect:
+        serializedVersion: 2
+        x: 276
+        y: 572
+        width: 69
+        height: 44
+      alignment: 9
+      pivot: {x: 0.37, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c72c350ab01d092a0800000000000000
+      internalID: -6732651595054202244
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_Gerrera_23
+      rect:
+        serializedVersion: 2
+        x: 345
+        y: 572
+        width: 69
+        height: 44
+      alignment: 9
+      pivot: {x: 0.37, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 389d921212377a5c0800000000000000
+      internalID: -4204265140999562877
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_Gerrera_24
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 528
+        width: 69
+        height: 44
+      alignment: 9
+      pivot: {x: 0.37, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d5fe7bd775648e0a0800000000000000
+      internalID: -6852149491458904227
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_Gerrera_25
+      rect:
+        serializedVersion: 2
+        x: 69
+        y: 528
+        width: 69
+        height: 44
+      alignment: 9
+      pivot: {x: 0.37, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 537439d3c59c412b0800000000000000
+      internalID: -5614641437416929483
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_Gerrera_26
+      rect:
+        serializedVersion: 2
+        x: 138
+        y: 528
+        width: 69
+        height: 44
+      alignment: 9
+      pivot: {x: 0.37, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aa0c397572eff4c80800000000000000
+      internalID: -8336164940313018198
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_Gerrera_27
+      rect:
+        serializedVersion: 2
+        x: 207
+        y: 528
+        width: 69
+        height: 44
+      alignment: 9
+      pivot: {x: 0.37, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a615d7473cc648490800000000000000
+      internalID: -7744945872441618070
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_Gerrera_28
+      rect:
+        serializedVersion: 2
+        x: 276
+        y: 528
+        width: 69
+        height: 44
+      alignment: 9
+      pivot: {x: 0.37, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4ce713428e9075890800000000000000
+      internalID: -7469490564326392124
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_Gerrera_29
+      rect:
+        serializedVersion: 2
+        x: 345
+        y: 528
+        width: 69
+        height: 44
+      alignment: 9
+      pivot: {x: 0.37, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 783d941819d8037d0800000000000000
+      internalID: -2940694900594060409
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_Gerrera_30
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 484
+        width: 69
+        height: 44
+      alignment: 9
+      pivot: {x: 0.37, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e5bfb88c5eddf2560800000000000000
+      internalID: 7291290300717988702
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_Gerrera_31
+      rect:
+        serializedVersion: 2
+        x: 69
+        y: 484
+        width: 69
+        height: 44
+      alignment: 9
+      pivot: {x: 0.37, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a5497d8b8b2774740800000000000000
+      internalID: 5136200037740024922
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_Gerrera_32
+      rect:
+        serializedVersion: 2
+        x: 138
+        y: 484
+        width: 69
+        height: 44
+      alignment: 9
+      pivot: {x: 0.37, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c66617080e1753970800000000000000
+      internalID: 8734012261396473452
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_Gerrera_33
+      rect:
+        serializedVersion: 2
+        x: 207
+        y: 484
+        width: 69
+        height: 44
+      alignment: 9
+      pivot: {x: 0.37, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e665fabd01ae8f5e0800000000000000
+      internalID: -1875491886673734034
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_Gerrera_34
+      rect:
+        serializedVersion: 2
+        x: 276
+        y: 484
+        width: 69
+        height: 44
+      alignment: 9
+      pivot: {x: 0.37, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 469c2f2ebddde74e0800000000000000
+      internalID: -1981902849521301148
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_Gerrera_35
+      rect:
+        serializedVersion: 2
+        x: 345
+        y: 484
+        width: 69
+        height: 44
+      alignment: 9
+      pivot: {x: 0.37, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 233261d2f5f723780800000000000000
+      internalID: -8704755082998701262
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_Gerrera_36
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 440
+        width: 69
+        height: 44
+      alignment: 9
+      pivot: {x: 0.37, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e5847afd400d53fd0800000000000000
+      internalID: -2362753710135228322
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_Gerrera_37
+      rect:
+        serializedVersion: 2
+        x: 69
+        y: 440
+        width: 69
+        height: 44
+      alignment: 9
+      pivot: {x: 0.37, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 13f26992b76ceb980800000000000000
+      internalID: -8521155212657414351
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_Gerrera_38
+      rect:
+        serializedVersion: 2
+        x: 138
+        y: 440
+        width: 69
+        height: 44
+      alignment: 9
+      pivot: {x: 0.37, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 139cedd3e96985480800000000000000
+      internalID: -8910206256365516495
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_Gerrera_39
+      rect:
+        serializedVersion: 2
+        x: 207
+        y: 440
+        width: 69
+        height: 44
+      alignment: 9
+      pivot: {x: 0.37, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a07a5892fd618f5c0800000000000000
+      internalID: -4181567106283362550
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_Gerrera_40
+      rect:
+        serializedVersion: 2
+        x: 276
+        y: 440
+        width: 69
+        height: 44
+      alignment: 9
+      pivot: {x: 0.37, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d0eb87c9239193020800000000000000
+      internalID: 2321914788050419213
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_Gerrera_41
+      rect:
+        serializedVersion: 2
+        x: 345
+        y: 440
+        width: 69
+        height: 44
+      alignment: 9
+      pivot: {x: 0.37, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d7482e982f7850710800000000000000
+      internalID: 1658881513521054845
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_Gerrera_42
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 396
+        width: 69
+        height: 44
+      alignment: 9
+      pivot: {x: 0.37, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 75955347db5995bc0800000000000000
+      internalID: -3793836570151921321
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_Gerrera_43
+      rect:
+        serializedVersion: 2
+        x: 69
+        y: 396
+        width: 69
+        height: 44
+      alignment: 9
+      pivot: {x: 0.37, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e07b0b014443b9430800000000000000
+      internalID: 3790680978304841486
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_Gerrera_44
+      rect:
+        serializedVersion: 2
+        x: 138
+        y: 396
+        width: 69
+        height: 44
+      alignment: 9
+      pivot: {x: 0.37, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 53a6dcb31197da1f0800000000000000
+      internalID: -1032035624673252811
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_Gerrera_45
+      rect:
+        serializedVersion: 2
+        x: 207
+        y: 396
+        width: 69
+        height: 44
+      alignment: 9
+      pivot: {x: 0.37, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c260d5b35a05e91f0800000000000000
+      internalID: -1036302193652857300
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_Gerrera_46
+      rect:
+        serializedVersion: 2
+        x: 276
+        y: 396
+        width: 69
+        height: 44
+      alignment: 9
+      pivot: {x: 0.37, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e33cdeb4dd0dc8550800000000000000
+      internalID: 6164531638843589438
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_Gerrera_47
+      rect:
+        serializedVersion: 2
+        x: 345
+        y: 396
+        width: 69
+        height: 44
+      alignment: 9
+      pivot: {x: 0.37, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 26b0643e993549790800000000000000
+      internalID: -7524297157021136030
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_Gerrera_48
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 352
+        width: 69
+        height: 44
+      alignment: 9
+      pivot: {x: 0.37, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2df12abaab6fef720800000000000000
+      internalID: 2882012093167574994
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_Gerrera_49
+      rect:
+        serializedVersion: 2
+        x: 69
+        y: 352
+        width: 69
+        height: 44
+      alignment: 9
+      pivot: {x: 0.37, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e6f24671a11ba33c0800000000000000
+      internalID: -4378992962044678290
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_Gerrera_50
+      rect:
+        serializedVersion: 2
+        x: 138
+        y: 352
+        width: 69
+        height: 44
+      alignment: 9
+      pivot: {x: 0.37, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c45b564fb8c2eee40800000000000000
+      internalID: 5687532359027897676
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_Gerrera_51
+      rect:
+        serializedVersion: 2
+        x: 207
+        y: 352
+        width: 69
+        height: 44
+      alignment: 9
+      pivot: {x: 0.37, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6bc108158b6054170800000000000000
+      internalID: 8161937288389991606
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_Gerrera_52
+      rect:
+        serializedVersion: 2
+        x: 276
+        y: 352
+        width: 69
+        height: 44
+      alignment: 9
+      pivot: {x: 0.37, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: baeda1862a09862a0800000000000000
+      internalID: -6743981414781624661
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_Gerrera_53
+      rect:
+        serializedVersion: 2
+        x: 345
+        y: 352
+        width: 69
+        height: 44
+      alignment: 9
+      pivot: {x: 0.37, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5150eb3b6e7d3f690800000000000000
+      internalID: -7569469162821647083
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_Gerrera_54
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 308
+        width: 69
+        height: 44
+      alignment: 9
+      pivot: {x: 0.37, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 82303b9acafe8b420800000000000000
+      internalID: 2646128305940661032
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_Gerrera_55
+      rect:
+        serializedVersion: 2
+        x: 69
+        y: 308
+        width: 69
+        height: 44
+      alignment: 9
+      pivot: {x: 0.37, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d3d88a98d6277bec0800000000000000
+      internalID: -3551243966371820227
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_Gerrera_56
+      rect:
+        serializedVersion: 2
+        x: 138
+        y: 308
+        width: 69
+        height: 44
+      alignment: 9
+      pivot: {x: 0.37, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7127e89055bbc2d50800000000000000
+      internalID: 6713947118409511447
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_Gerrera_57
+      rect:
+        serializedVersion: 2
+        x: 207
+        y: 308
+        width: 69
+        height: 44
+      alignment: 9
+      pivot: {x: 0.37, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 28897bbaf226122c0800000000000000
+      internalID: -4458174199236159358
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_Gerrera_58
+      rect:
+        serializedVersion: 2
+        x: 276
+        y: 308
+        width: 69
+        height: 44
+      alignment: 9
+      pivot: {x: 0.37, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 371c19c119ba7f9d0800000000000000
+      internalID: -2740533208493735565
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_Gerrera_59
+      rect:
+        serializedVersion: 2
+        x: 345
+        y: 308
+        width: 69
+        height: 44
+      alignment: 9
+      pivot: {x: 0.37, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d03ed549f21831c00800000000000000
+      internalID: 870181194365264653
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_Gerrera_60
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 264
+        width: 69
+        height: 44
+      alignment: 9
+      pivot: {x: 0.37, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7458f4de5d89ee690800000000000000
+      internalID: -7570945878986357433
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_Gerrera_61
+      rect:
+        serializedVersion: 2
+        x: 69
+        y: 264
+        width: 69
+        height: 44
+      alignment: 9
+      pivot: {x: 0.37, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2806c606577e01520800000000000000
+      internalID: 2670889070345609346
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_Gerrera_62
+      rect:
+        serializedVersion: 2
+        x: 138
+        y: 264
+        width: 69
+        height: 44
+      alignment: 9
+      pivot: {x: 0.37, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ed170a759cd863e90800000000000000
+      internalID: -7046288671076486690
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_Gerrera_63
+      rect:
+        serializedVersion: 2
+        x: 207
+        y: 264
+        width: 69
+        height: 44
+      alignment: 9
+      pivot: {x: 0.37, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: adc38c10e6981d1e0800000000000000
+      internalID: -2174806039473931046
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_Gerrera_64
+      rect:
+        serializedVersion: 2
+        x: 276
+        y: 264
+        width: 69
+        height: 44
+      alignment: 9
+      pivot: {x: 0.37, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 633559906f0567f30800000000000000
+      internalID: 4572931489294275382
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_Gerrera_65
+      rect:
+        serializedVersion: 2
+        x: 345
+        y: 264
+        width: 69
+        height: 44
+      alignment: 9
+      pivot: {x: 0.37, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8cb8b4b6ea81ad470800000000000000
+      internalID: 8420069590726052808
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_Gerrera_66
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 220
+        width: 69
+        height: 44
+      alignment: 9
+      pivot: {x: 0.37, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6f5f51171b33c2170800000000000000
+      internalID: 8154949862460618230
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_Gerrera_67
+      rect:
+        serializedVersion: 2
+        x: 69
+        y: 220
+        width: 69
+        height: 44
+      alignment: 9
+      pivot: {x: 0.37, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d68dc4f75ca9953a0800000000000000
+      internalID: -6676134799565072275
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_Gerrera_68
+      rect:
+        serializedVersion: 2
+        x: 138
+        y: 220
+        width: 69
+        height: 44
+      alignment: 9
+      pivot: {x: 0.37, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f6dc12d17b21b1670800000000000000
+      internalID: 8510416498523753839
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_Gerrera_69
+      rect:
+        serializedVersion: 2
+        x: 207
+        y: 220
+        width: 69
+        height: 44
+      alignment: 9
+      pivot: {x: 0.37, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f10e221c0cc4b1470800000000000000
+      internalID: 8366365123528548383
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_Gerrera_70
+      rect:
+        serializedVersion: 2
+        x: 276
+        y: 220
+        width: 69
+        height: 44
+      alignment: 9
+      pivot: {x: 0.37, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 80007ddd2d3be6460800000000000000
+      internalID: 7236919369477324808
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_Gerrera_71
+      rect:
+        serializedVersion: 2
+        x: 345
+        y: 220
+        width: 69
+        height: 44
+      alignment: 9
+      pivot: {x: 0.37, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 16ab9f49a02f89950800000000000000
+      internalID: 6456176193098594913
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_Gerrera_72
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 176
+        width: 69
+        height: 44
+      alignment: 9
+      pivot: {x: 0.37, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 742a3f33d97560d30800000000000000
+      internalID: 4397298418866954823
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_Gerrera_73
+      rect:
+        serializedVersion: 2
+        x: 69
+        y: 176
+        width: 69
+        height: 44
+      alignment: 9
+      pivot: {x: 0.37, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cdc663491004ab110800000000000000
+      internalID: 1277403819838696668
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_Gerrera_74
+      rect:
+        serializedVersion: 2
+        x: 138
+        y: 176
+        width: 69
+        height: 44
+      alignment: 9
+      pivot: {x: 0.37, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 85bf9cf527f9e9be0800000000000000
+      internalID: -1468561114894042280
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_Gerrera_75
+      rect:
+        serializedVersion: 2
+        x: 207
+        y: 176
+        width: 69
+        height: 44
+      alignment: 9
+      pivot: {x: 0.37, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5d5a5b37f10ce3700800000000000000
+      internalID: 522065848139359701
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_Gerrera_76
+      rect:
+        serializedVersion: 2
+        x: 276
+        y: 176
+        width: 69
+        height: 44
+      alignment: 9
+      pivot: {x: 0.37, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e2102b93f3b326ee0800000000000000
+      internalID: -1269387002228113106
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_Gerrera_77
+      rect:
+        serializedVersion: 2
+        x: 345
+        y: 176
+        width: 69
+        height: 44
+      alignment: 9
+      pivot: {x: 0.37, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8f5988327f506c570800000000000000
+      internalID: 8486477106837493240
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_Gerrera_78
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 132
+        width: 69
+        height: 44
+      alignment: 9
+      pivot: {x: 0.37, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 82dfdb498c6a16320800000000000000
+      internalID: 2549502244487560488
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_Gerrera_79
+      rect:
+        serializedVersion: 2
+        x: 69
+        y: 132
+        width: 69
+        height: 44
+      alignment: 9
+      pivot: {x: 0.37, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 612b455b0d87c70f0800000000000000
+      internalID: -1117885769703968234
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_Gerrera_80
+      rect:
+        serializedVersion: 2
+        x: 138
+        y: 132
+        width: 69
+        height: 44
+      alignment: 9
+      pivot: {x: 0.37, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 15aed2de0539715f0800000000000000
+      internalID: -785997634166986159
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_Gerrera_81
+      rect:
+        serializedVersion: 2
+        x: 207
+        y: 132
+        width: 69
+        height: 44
+      alignment: 9
+      pivot: {x: 0.37, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c171b4cdc5e6766b0800000000000000
+      internalID: -5303148691093514468
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_Gerrera_82
+      rect:
+        serializedVersion: 2
+        x: 276
+        y: 132
+        width: 69
+        height: 44
+      alignment: 9
+      pivot: {x: 0.37, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4618e8f9e21f0b490800000000000000
+      internalID: -7732415377647435420
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_Gerrera_83
+      rect:
+        serializedVersion: 2
+        x: 345
+        y: 132
+        width: 69
+        height: 44
+      alignment: 9
+      pivot: {x: 0.37, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1164f270fc85825b0800000000000000
+      internalID: -5392962907574155759
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_Gerrera_84
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 88
+        width: 69
+        height: 44
+      alignment: 9
+      pivot: {x: 0.37, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a04208e3d790f1c10800000000000000
+      internalID: 2026348790864159754
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_Gerrera_85
+      rect:
+        serializedVersion: 2
+        x: 69
+        y: 88
+        width: 69
+        height: 44
+      alignment: 9
+      pivot: {x: 0.37, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3d109b1209ed39b80800000000000000
+      internalID: -8389116970238672429
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_Gerrera_86
+      rect:
+        serializedVersion: 2
+        x: 138
+        y: 88
+        width: 69
+        height: 44
+      alignment: 9
+      pivot: {x: 0.37, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 03c283420952633f0800000000000000
+      internalID: -921507772737508304
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_Gerrera_87
+      rect:
+        serializedVersion: 2
+        x: 207
+        y: 88
+        width: 69
+        height: 44
+      alignment: 9
+      pivot: {x: 0.37, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f2d7bb10f13c63de0800000000000000
+      internalID: -1353680100037788369
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_Gerrera_88
+      rect:
+        serializedVersion: 2
+        x: 276
+        y: 88
+        width: 69
+        height: 44
+      alignment: 9
+      pivot: {x: 0.37, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 257bd67642609d000800000000000000
+      internalID: 61086823370045266
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_Gerrera_89
+      rect:
+        serializedVersion: 2
+        x: 345
+        y: 88
+        width: 69
+        height: 44
+      alignment: 9
+      pivot: {x: 0.37, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: afdcb2a7eec2d03d0800000000000000
+      internalID: -3238883154245988870
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_Gerrera_90
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 44
+        width: 69
+        height: 44
+      alignment: 9
+      pivot: {x: 0.37, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9a044660d8ca46cf0800000000000000
+      internalID: -259893156783046487
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_Gerrera_91
+      rect:
+        serializedVersion: 2
+        x: 69
+        y: 44
+        width: 69
+        height: 44
+      alignment: 9
+      pivot: {x: 0.37, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ebc96b72459ebb2f0800000000000000
+      internalID: -955913948233294658
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_Gerrera_92
+      rect:
+        serializedVersion: 2
+        x: 138
+        y: 44
+        width: 69
+        height: 44
+      alignment: 9
+      pivot: {x: 0.37, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 58bcf9fe021732240800000000000000
+      internalID: 4765777216961235845
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_Gerrera_93
+      rect:
+        serializedVersion: 2
+        x: 207
+        y: 44
+        width: 69
+        height: 44
+      alignment: 9
+      pivot: {x: 0.37, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 51ab04dbf7876e2c0800000000000000
+      internalID: -4402699095676765675
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_Gerrera_94
+      rect:
+        serializedVersion: 2
+        x: 276
+        y: 44
+        width: 69
+        height: 44
+      alignment: 9
+      pivot: {x: 0.37, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f9b6b6ed5a669abd0800000000000000
+      internalID: -2618448845752013921
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_Gerrera_95
+      rect:
+        serializedVersion: 2
+        x: 345
+        y: 44
+        width: 69
+        height: 44
+      alignment: 9
+      pivot: {x: 0.37, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 06f83e0442f2f7150800000000000000
+      internalID: 5872464271868399456
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_Gerrera_96
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 69
+        height: 44
+      alignment: 9
+      pivot: {x: 0.37, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 05354accbb67d3910800000000000000
+      internalID: 1818740373491831632
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_Gerrera_97
+      rect:
+        serializedVersion: 2
+        x: 69
+        y: 0
+        width: 69
+        height: 44
+      alignment: 9
+      pivot: {x: 0.37, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bd71e3c2c2a1d3260800000000000000
+      internalID: 7078842966319437787
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_Gerrera_98
+      rect:
+        serializedVersion: 2
+        x: 138
+        y: 0
+        width: 69
+        height: 44
+      alignment: 9
+      pivot: {x: 0.37, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ea9588815fd67a080800000000000000
+      internalID: -9176244816298092114
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 61f55b74a9814fd4193a57eb2e68d3c4
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":69.0,"y":44.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.0},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":7,"pivotUnitMode":0,"slicingType":1,"keepEmptyRects":false,"isAlternate":false}'
+    nameFileIdTable:
+      Sprite_Gerrera_0: -8476986687214454358
+      Sprite_Gerrera_1: -4373670899185137698
+      Sprite_Gerrera_10: 4271411287306893317
+      Sprite_Gerrera_11: 6014931612076361448
+      Sprite_Gerrera_12: -6764899556617800193
+      Sprite_Gerrera_13: 7826057960634212178
+      Sprite_Gerrera_14: 9154983994455479686
+      Sprite_Gerrera_15: -6994920797144987491
+      Sprite_Gerrera_16: 1067891586552055952
+      Sprite_Gerrera_17: -4536796601120522012
+      Sprite_Gerrera_18: 7336506393250434866
+      Sprite_Gerrera_19: -1417842223744178442
+      Sprite_Gerrera_2: -6211090174737911803
+      Sprite_Gerrera_20: 7512009232304674309
+      Sprite_Gerrera_21: 8703284309769710868
+      Sprite_Gerrera_22: -6732651595054202244
+      Sprite_Gerrera_23: -4204265140999562877
+      Sprite_Gerrera_24: -6852149491458904227
+      Sprite_Gerrera_25: -5614641437416929483
+      Sprite_Gerrera_26: -8336164940313018198
+      Sprite_Gerrera_27: -7744945872441618070
+      Sprite_Gerrera_28: -7469490564326392124
+      Sprite_Gerrera_29: -2940694900594060409
+      Sprite_Gerrera_3: 158502285188553898
+      Sprite_Gerrera_30: 7291290300717988702
+      Sprite_Gerrera_31: 5136200037740024922
+      Sprite_Gerrera_32: 8734012261396473452
+      Sprite_Gerrera_33: -1875491886673734034
+      Sprite_Gerrera_34: -1981902849521301148
+      Sprite_Gerrera_35: -8704755082998701262
+      Sprite_Gerrera_36: -2362753710135228322
+      Sprite_Gerrera_37: -8521155212657414351
+      Sprite_Gerrera_38: -8910206256365516495
+      Sprite_Gerrera_39: -4181567106283362550
+      Sprite_Gerrera_4: -3357876240196449896
+      Sprite_Gerrera_40: 2321914788050419213
+      Sprite_Gerrera_41: 1658881513521054845
+      Sprite_Gerrera_42: -3793836570151921321
+      Sprite_Gerrera_43: 3790680978304841486
+      Sprite_Gerrera_44: -1032035624673252811
+      Sprite_Gerrera_45: -1036302193652857300
+      Sprite_Gerrera_46: 6164531638843589438
+      Sprite_Gerrera_47: -7524297157021136030
+      Sprite_Gerrera_48: 2882012093167574994
+      Sprite_Gerrera_49: -4378992962044678290
+      Sprite_Gerrera_5: 6012823754483597684
+      Sprite_Gerrera_50: 5687532359027897676
+      Sprite_Gerrera_51: 8161937288389991606
+      Sprite_Gerrera_52: -6743981414781624661
+      Sprite_Gerrera_53: -7569469162821647083
+      Sprite_Gerrera_54: 2646128305940661032
+      Sprite_Gerrera_55: -3551243966371820227
+      Sprite_Gerrera_56: 6713947118409511447
+      Sprite_Gerrera_57: -4458174199236159358
+      Sprite_Gerrera_58: -2740533208493735565
+      Sprite_Gerrera_59: 870181194365264653
+      Sprite_Gerrera_6: -8799280277766835100
+      Sprite_Gerrera_60: -7570945878986357433
+      Sprite_Gerrera_61: 2670889070345609346
+      Sprite_Gerrera_62: -7046288671076486690
+      Sprite_Gerrera_63: -2174806039473931046
+      Sprite_Gerrera_64: 4572931489294275382
+      Sprite_Gerrera_65: 8420069590726052808
+      Sprite_Gerrera_66: 8154949862460618230
+      Sprite_Gerrera_67: -6676134799565072275
+      Sprite_Gerrera_68: 8510416498523753839
+      Sprite_Gerrera_69: 8366365123528548383
+      Sprite_Gerrera_7: 4897824832834078146
+      Sprite_Gerrera_70: 7236919369477324808
+      Sprite_Gerrera_71: 6456176193098594913
+      Sprite_Gerrera_72: 4397298418866954823
+      Sprite_Gerrera_73: 1277403819838696668
+      Sprite_Gerrera_74: -1468561114894042280
+      Sprite_Gerrera_75: 522065848139359701
+      Sprite_Gerrera_76: -1269387002228113106
+      Sprite_Gerrera_77: 8486477106837493240
+      Sprite_Gerrera_78: 2549502244487560488
+      Sprite_Gerrera_79: -1117885769703968234
+      Sprite_Gerrera_8: -197462959695625762
+      Sprite_Gerrera_80: -785997634166986159
+      Sprite_Gerrera_81: -5303148691093514468
+      Sprite_Gerrera_82: -7732415377647435420
+      Sprite_Gerrera_83: -5392962907574155759
+      Sprite_Gerrera_84: 2026348790864159754
+      Sprite_Gerrera_85: -8389116970238672429
+      Sprite_Gerrera_86: -921507772737508304
+      Sprite_Gerrera_87: -1353680100037788369
+      Sprite_Gerrera_88: 61086823370045266
+      Sprite_Gerrera_89: -3238883154245988870
+      Sprite_Gerrera_9: -5152212969784345934
+      Sprite_Gerrera_90: -259893156783046487
+      Sprite_Gerrera_91: -955913948233294658
+      Sprite_Gerrera_92: 4765777216961235845
+      Sprite_Gerrera_93: -4402699095676765675
+      Sprite_Gerrera_94: -2618448845752013921
+      Sprite_Gerrera_95: 5872464271868399456
+      Sprite_Gerrera_96: 1818740373491831632
+      Sprite_Gerrera_97: 7078842966319437787
+      Sprite_Gerrera_98: -9176244816298092114
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
