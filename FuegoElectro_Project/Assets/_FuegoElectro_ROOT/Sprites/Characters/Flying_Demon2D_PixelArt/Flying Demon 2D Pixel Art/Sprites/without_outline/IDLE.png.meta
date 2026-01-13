@@ -46,7 +46,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -60,7 +60,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 32
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -118,6 +118,45 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: iOS
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -126,15 +165,23 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 4
-        width: 80
-        height: 59
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        y: 0
+        width: 79
+        height: 69
+      alignment: 9
+      pivot: {x: 0.36, y: 0.4}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
-      outline: []
-      physicsShape: []
+      outline:
+      - - {x: 0, y: -34.5}
+        - {x: 39.5, y: 0}
+        - {x: 0, y: 34.5}
+        - {x: -39.5, y: 0}
+      physicsShape:
+      - - {x: 0, y: -34.5}
+        - {x: 39.5, y: 0}
+        - {x: 0, y: 34.5}
+        - {x: -39.5, y: 0}
       tessellationDetail: -1
       bones: []
       spriteID: 49525dc25f7f05b00800000000000000
@@ -147,16 +194,24 @@ TextureImporter:
       name: IDLE_1
       rect:
         serializedVersion: 2
-        x: 87
-        y: 1
-        width: 63
-        height: 65
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 79
+        y: 0
+        width: 79
+        height: 69
+      alignment: 9
+      pivot: {x: 0.36, y: 0.4}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
-      outline: []
-      physicsShape: []
+      outline:
+      - - {x: 0, y: -34.5}
+        - {x: 39.5, y: 0}
+        - {x: 0, y: 34.5}
+        - {x: -39.5, y: 0}
+      physicsShape:
+      - - {x: 0, y: -34.5}
+        - {x: 39.5, y: 0}
+        - {x: 0, y: 34.5}
+        - {x: -39.5, y: 0}
       tessellationDetail: -1
       bones: []
       spriteID: 813cc64c4d9fd3cf0800000000000000
@@ -169,16 +224,24 @@ TextureImporter:
       name: IDLE_2
       rect:
         serializedVersion: 2
-        x: 164
-        y: 5
-        width: 68
-        height: 60
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 158
+        y: 0
+        width: 79
+        height: 69
+      alignment: 9
+      pivot: {x: 0.36, y: 0.4}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
-      outline: []
-      physicsShape: []
+      outline:
+      - - {x: 0, y: -34.5}
+        - {x: 39.5, y: 0}
+        - {x: 0, y: 34.5}
+        - {x: -39.5, y: 0}
+      physicsShape:
+      - - {x: 0, y: -34.5}
+        - {x: 39.5, y: 0}
+        - {x: 0, y: 34.5}
+        - {x: -39.5, y: 0}
       tessellationDetail: -1
       bones: []
       spriteID: 41f3fe79b926e2570800000000000000
@@ -191,16 +254,24 @@ TextureImporter:
       name: IDLE_3
       rect:
         serializedVersion: 2
-        x: 243
-        y: 5
-        width: 67
-        height: 59
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 237
+        y: 0
+        width: 79
+        height: 69
+      alignment: 9
+      pivot: {x: 0.36, y: 0.4}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
-      outline: []
-      physicsShape: []
+      outline:
+      - - {x: 0, y: -34.5}
+        - {x: 39.5, y: 0}
+        - {x: 0, y: 34.5}
+        - {x: -39.5, y: 0}
+      physicsShape:
+      - - {x: 0, y: -34.5}
+        - {x: 39.5, y: 0}
+        - {x: 0, y: 34.5}
+        - {x: -39.5, y: 0}
       tessellationDetail: -1
       bones: []
       spriteID: ccc89ef21e1d9a810800000000000000
@@ -213,7 +284,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 4f245c24a2021a64da81f277cd6c7eb9
     internalID: 0
     vertices: []
     indices: 
@@ -221,7 +292,9 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     spriteCustomMetadata:
-      entries: []
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":79.0,"y":69.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":3,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
       IDLE_0: 815424164945274260
       IDLE_1: -270785710348516584
