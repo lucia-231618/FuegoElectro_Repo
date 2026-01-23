@@ -16,8 +16,8 @@ public class EnemyController : MonoBehaviour
 
     // Animator y animaciones (ahora privadas, pero editables en Inspector con SerializeField)
     public Animator animator;
-    private string walkingAnim = "Walking"; // Nombre del trigger para caminar
-    private string flyingAnim = "Flying"; // Nombre del trigger para volar
+    [SerializeField] private string walkingAnim = "Walking"; // Nombre del trigger para caminar
+    [SerializeField] private string flyingAnim = "Flying"; // Nombre del trigger para volar
     public bool isFlying = false; // Si es volador (cambia la animación de movimiento)
 
     // Referencia al SpriteRenderer para flippeo
@@ -35,6 +35,9 @@ public class EnemyController : MonoBehaviour
 
     // Salud
     public int health = 100;
+
+    // Para rastrear flipX esperado
+    private bool expectedFlipX;
 
     void Start()
     {
@@ -56,7 +59,8 @@ public class EnemyController : MonoBehaviour
             }
 
             // Flip inicial: Asumiendo que el sprite mira a la derecha por defecto
-            spriteRenderer.flipX = !movingRight; // movingRight = true → flipX = false (derecha)
+            expectedFlipX = !movingRight;
+            spriteRenderer.flipX = expectedFlipX;
             Debug.Log(gameObject.name + " - Flip inicial: FlipX = " + spriteRenderer.flipX);
         }
 
@@ -79,6 +83,16 @@ public class EnemyController : MonoBehaviour
         CheckForAttack();
     }
 
+    // Forzar flipX al final del frame para prevenir sobrescrituras del Animator
+    void LateUpdate()
+    {
+        if (spriteRenderer != null && spriteRenderer.flipX != expectedFlipX)
+        {
+            Debug.LogWarning(gameObject.name + " - FlipX cambió por Animator a " + spriteRenderer.flipX + ". Forzando a " + expectedFlipX);
+            spriteRenderer.flipX = expectedFlipX;
+        }
+    }
+
     // Método de movimiento: camina en un rango y flippea al llegar al límite
     private void Move()
     {
@@ -92,10 +106,11 @@ public class EnemyController : MonoBehaviour
             // Cambiar dirección
             movingRight = !movingRight;
 
-            // Flippear el sprite solo si SpriteRenderer existe
+            // Actualizar flipX esperado
+            expectedFlipX = !movingRight;
             if (spriteRenderer != null)
             {
-                spriteRenderer.flipX = !movingRight; // Asumiendo sprite mira a la derecha por defecto
+                spriteRenderer.flipX = expectedFlipX;
                 Debug.Log(gameObject.name + " - Flippeando en límite. Posición: " + transform.position.x + ", MovingRight: " + movingRight + ", FlipX: " + spriteRenderer.flipX);
             }
             else

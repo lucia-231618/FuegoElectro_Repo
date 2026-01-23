@@ -79,16 +79,16 @@ public class PlayerController : MonoBehaviour
             (Keyboard.current.aKey.isPressed || Keyboard.current.leftArrowKey.isPressed ? -1 : 0) +
             (Keyboard.current.dKey.isPressed || Keyboard.current.rightArrowKey.isPressed ? 1 : 0);
 
-        playerRb.linearVelocity = new Vector2(horizontalInput * speed,playerRb.linearVelocity.y);
+        playerRb.linearVelocity = new Vector2(horizontalInput * speed, playerRb.linearVelocity.y);
 
         if (isAttacking || isDead || isClimbing || isHurt) return;
 
         //Flip: si el valor del input es diferente a 0
-        if (horizontalInput > 0) 
+        if (horizontalInput > 0)
         {
             anim.SetBool("Running", true);
             if (!isFacingRight)
-            { 
+            {
                 Flip();
             }
         }
@@ -100,7 +100,7 @@ public class PlayerController : MonoBehaviour
                 Flip();
             }
         }
-        if(horizontalInput == 0)
+        if (horizontalInput == 0)
         {
             anim.SetBool("Running", false);
         }
@@ -118,12 +118,12 @@ public class PlayerController : MonoBehaviour
     }
 
     void Flip()
-    { 
+    {
         Vector3 currentScale = transform.localScale;
-        currentScale.x *= -1; 
+        currentScale.x *= -1;
         transform.localScale = currentScale;
         isFacingRight = !isFacingRight;
-    
+
     }
     void Attack()
     {
