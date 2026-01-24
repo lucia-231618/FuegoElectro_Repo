@@ -14,11 +14,11 @@ public class EnemyController : MonoBehaviour
     private Vector3 startPosition; // Posición inicial
     private bool movingRight = true; // Dirección de movimiento
 
-    // Animator y animaciones (ahora privadas, pero editables en Inspector con SerializeField)
+    // Animator y animaciones
     public Animator animator;
-    [SerializeField] private string walkingAnim = "Walking"; // Nombre del trigger para caminar
-    [SerializeField] private string flyingAnim = "Flying"; // Nombre del trigger para volar
-    public bool isFlying = false; // Si es volador (cambia la animación de movimiento)
+    [SerializeField] private string walkingAnim = "Walking"; // Bool para caminar
+    [SerializeField] private string flyingAnim = "Flying"; // Bool para volar
+    public bool isFlying = false; // Si es volador
 
     // Referencia al SpriteRenderer para flippeo
     private SpriteRenderer spriteRenderer;
@@ -31,10 +31,10 @@ public class EnemyController : MonoBehaviour
     public float attackRange = 2f; // Rango de ataque
     private bool isAttacking = false; // Flag para evitar ataques múltiples
     private bool isDead = false; // Flag para estado muerto
-    private bool hasBeenAttacked = false; // Flag para enemigos defensivos (atacan solo si son atacados)
+    private bool hasBeenAttacked = false; // Flag para defensivos
 
     // Salud
-    public int health = 100;
+    [SerializeField] private int health = 100; // Editable en Inspector
 
     // Para rastrear flipX esperado
     private bool expectedFlipX;
@@ -48,27 +48,23 @@ public class EnemyController : MonoBehaviour
         spriteRenderer = GetComponent<SpriteRenderer>();
         if (spriteRenderer == null)
         {
-            //Debug.LogError("No se encontró SpriteRenderer en " + gameObject.name + ". Asegúrate de que sea un sprite. El flippeo no funcionará.");
+            Debug.LogError("No se encontró SpriteRenderer en " + gameObject.name);
         }
         else
         {
-            // Verificar escala inicial (debe ser positiva en X)
             if (transform.localScale.x < 0)
             {
-                //Debug.LogWarning(gameObject.name + " tiene escala X negativa. Esto puede invertir el flippeo. Corrígelo en el Inspector.");
+                Debug.LogWarning(gameObject.name + " tiene escala X negativa.");
             }
-
-            // Flip inicial: Asumiendo que el sprite mira a la derecha por defecto
             expectedFlipX = !movingRight;
             spriteRenderer.flipX = expectedFlipX;
-            //Debug.Log(gameObject.name + " - Flip inicial: FlipX = " + spriteRenderer.flipX);
         }
 
-        // Encontrar al jugador por tag (asegúrate de que el jugador tenga el tag "Player")
+        // Encontrar al jugador
         player = GameObject.FindGameObjectWithTag("Player")?.transform;
         if (player == null)
         {
-            //Debug.LogError("No se encontró un objeto con tag 'Player'. Asegúrate de etiquetarlo correctamente.");
+            Debug.LogError("No se encontró un objeto con tag 'Player'");
         }
     }
 
@@ -84,63 +80,44 @@ public class EnemyController : MonoBehaviour
         CheckForAttack();
     }
 
-
-    // Forzar flipX al final del frame para prevenir sobrescrituras del Animator
     void LateUpdate()
     {
         if (spriteRenderer != null && spriteRenderer.flipX != expectedFlipX)
         {
-            //Debug.LogWarning(gameObject.name + " - FlipX cambió por Animator a " + spriteRenderer.flipX + ". Forzando a " + expectedFlipX);
             spriteRenderer.flipX = expectedFlipX;
         }
     }
 
-    // Método de movimiento: camina en un rango y flippea al llegar al límite
     private void Move()
     {
-        // Mover en la dirección actual
+        // Patrulla
         Vector3 direction = movingRight ? Vector3.right : Vector3.left;
         transform.Translate(direction * speed * Time.deltaTime);
 
-        // Verificar si ha alcanzado el límite del rango
         if (Mathf.Abs(transform.position.x - startPosition.x) >= range)
         {
-            // Cambiar dirección
             movingRight = !movingRight;
-
-            // Actualizar flipX esperado
             expectedFlipX = !movingRight;
             if (spriteRenderer != null)
             {
                 spriteRenderer.flipX = expectedFlipX;
-                //Debug.Log(gameObject.name + " - Flippeando en límite. Posición: " + transform.position.x + ", MovingRight: " + movingRight + ", FlipX: " + spriteRenderer.flipX);
-            }
-            else
-            {
-                //Debug.LogWarning("SpriteRenderer es null en " + gameObject.name + ". No se puede flippear.");
             }
         }
 
-        // Activar animación de movimiento (Walking o Flying)
-        if (!isFlying)
-        {
-            animator.SetBool("Walking", true);
-        }
-        else
-        {
-            animator.SetBool("Walking", false);
-        }
+        // Animación
+        animator.SetBool("Walking", !isFlying);
     }
 
-    // Verificar si debe atacar basado en el tipo de enemigo (sin flippeo hacia el jugador)
     private void CheckForAttack()
     {
         float distToPlayer = Vector3.Distance(transform.position, player.position);
+        Debug.Log(gameObject.name + " - Distancia: " + distToPlayer + ", Tipo: " + enemyType + ", isAttacking: " + isAttacking + ", hasBeenAttacked: " + hasBeenAttacked);
 
         if (enemyType == EnemyType.Aggressive)
         {
             if (distToPlayer <= attackRange)
             {
+                Debug.Log(gameObject.name + " - Atacando (agresivo)");
                 Attack();
             }
             else if (distToPlayer <= visionRange && !isAttacking)
@@ -150,6 +127,7 @@ public class EnemyController : MonoBehaviour
         }
         else if (enemyType == EnemyType.Defensive && hasBeenAttacked && distToPlayer <= attackRange)
         {
+            Debug.Log(gameObject.name + " - Atacando (defensivo)");
             Attack();
         }
     }
@@ -159,61 +137,77 @@ public class EnemyController : MonoBehaviour
         Vector3 dir = (player.position - transform.position).normalized;
         transform.Translate(new Vector3(dir.x, 0, 0) * speed * Time.deltaTime);
 
-        // Flip
         expectedFlipX = dir.x < 0;
         spriteRenderer.flipX = expectedFlipX;
 
         animator.SetBool("Walking", true);
     }
 
-
-    // Método de ataque
     private void Attack()
     {
         if (!isAttacking)
         {
             isAttacking = true;
             animator.SetTrigger("Attack");
-            // Aquí puedes agregar lógica adicional, como infligir daño al jugador
-            // Por ejemplo: player.GetComponent<PlayerController>().TakeDamage(10);
-            // Resetear el flag después de la animación (asumiendo duración corta)
-            Invoke("ResetAttack", 1f); // Ajusta el tiempo según la duración de la animación
+            Debug.Log(gameObject.name + " - Trigger 'Attack' seteado. Animator: " + (animator != null ? "OK" : "NULL"));
+
+            // NO dañar aquí; se hace desde Animation Event
+            Invoke("ResetAttack", 1f);
         }
     }
 
-    // Resetear el flag de ataque
+    // Método para Animation Event: daña durante la animación
+    public void DealDamage()
+    {
+        if (player != null)
+        {
+            PlayerController playerScript = player.GetComponent<PlayerController>();
+            if (playerScript != null)
+            {
+                playerScript.TakeDamage(10);
+                Debug.Log(gameObject.name + " - Daño infligido al jugador durante animación");
+            }
+        }
+    }
+
     private void ResetAttack()
     {
         isAttacking = false;
+        Debug.Log(gameObject.name + " - ResetAttack llamado, isAttacking = false");
     }
 
-    // Método para recibir daño (llámalo desde el script del jugador o proyectiles)
     public void TakeDamage(int damage)
     {
         if (isDead) return;
 
         health -= damage;
         animator.SetTrigger("Hurt");
+        Debug.Log(gameObject.name + " - Recibió " + damage + " daño, salud: " + health);
 
-        // Si es defensivo, marcar que ha sido atacado
         if (enemyType == EnemyType.Defensive)
         {
             hasBeenAttacked = true;
+            Debug.Log(gameObject.name + " - hasBeenAttacked seteado a TRUE (defensivo activado)");
+
+            // Devuelve el ataque si está en rango
+            float distToPlayer = Vector3.Distance(transform.position, player.position);
+            if (distToPlayer <= attackRange && !isAttacking)
+            {
+                Debug.Log(gameObject.name + " - Defensivo devuelve el ataque");
+                Attack();
+            }
         }
 
-        // Verificar si muere
         if (health <= 0)
         {
             Die();
         }
     }
 
-    // Método de muerte
     private void Die()
     {
         isDead = true;
         animator.SetTrigger("Death");
-        // Destruir el objeto después de la animación (ajusta el tiempo según la duración)
         Destroy(gameObject, 1f);
     }
 }
