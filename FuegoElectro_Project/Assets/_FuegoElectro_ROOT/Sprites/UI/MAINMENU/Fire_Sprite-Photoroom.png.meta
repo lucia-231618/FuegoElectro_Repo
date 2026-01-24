@@ -1,0 +1,1293 @@
+fileFormatVersion: 2
+guid: 2533bde3ba3fd3942a3479945fd6b5c2
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 7300508732270459624
+    second: Fire_Sprite-Photoroom_0
+  - first:
+      213: -4863635580782470953
+    second: Fire_Sprite-Photoroom_1
+  - first:
+      213: -7622567045030121423
+    second: Fire_Sprite-Photoroom_2
+  - first:
+      213: 2697997753377421185
+    second: Fire_Sprite-Photoroom_3
+  - first:
+      213: 6432078829456292569
+    second: Fire_Sprite-Photoroom_4
+  - first:
+      213: 4800264845787478565
+    second: Fire_Sprite-Photoroom_5
+  - first:
+      213: 1772741564573754770
+    second: Fire_Sprite-Photoroom_6
+  - first:
+      213: -1300778568127588625
+    second: Fire_Sprite-Photoroom_7
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Fire_Sprite-Photoroom_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1152
+        width: 227
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8ea3e92230e905560800000000000000
+      internalID: 7300508732270459624
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fire_Sprite-Photoroom_1
+      rect:
+        serializedVersion: 2
+        x: 227
+        y: 1152
+        width: 227
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7d8928a3535e08cb0800000000000000
+      internalID: -4863635580782470953
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fire_Sprite-Photoroom_2
+      rect:
+        serializedVersion: 2
+        x: 454
+        y: 1152
+        width: 227
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 130716c98a3373690800000000000000
+      internalID: -7622567045030121423
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fire_Sprite-Photoroom_3
+      rect:
+        serializedVersion: 2
+        x: 681
+        y: 1152
+        width: 227
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 187fcde79a6317520800000000000000
+      internalID: 2697997753377421185
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fire_Sprite-Photoroom_4
+      rect:
+        serializedVersion: 2
+        x: 908
+        y: 1152
+        width: 227
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9da7d05ed95534950800000000000000
+      internalID: 6432078829456292569
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fire_Sprite-Photoroom_5
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1024
+        width: 227
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 52a35f0c177fd9240800000000000000
+      internalID: 4800264845787478565
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fire_Sprite-Photoroom_6
+      rect:
+        serializedVersion: 2
+        x: 227
+        y: 1024
+        width: 227
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2952df28f0b0a9810800000000000000
+      internalID: 1772741564573754770
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fire_Sprite-Photoroom_7
+      rect:
+        serializedVersion: 2
+        x: 454
+        y: 1024
+        width: 227
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fe6505bb8c4b2fde0800000000000000
+      internalID: -1300778568127588625
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fire_Sprite-Photoroom_8
+      rect:
+        serializedVersion: 2
+        x: 681
+        y: 1024
+        width: 227
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4cdb82f682c9bab49945b0e0067a21e7
+      internalID: 1458185937
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fire_Sprite-Photoroom_9
+      rect:
+        serializedVersion: 2
+        x: 908
+        y: 1024
+        width: 227
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d8c446ac5d04a3945b4503fc17c0f38e
+      internalID: 2136270932
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fire_Sprite-Photoroom_10
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 896
+        width: 227
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7bde43d44f46ac6448d9e32e4133af32
+      internalID: -1444687265
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fire_Sprite-Photoroom_11
+      rect:
+        serializedVersion: 2
+        x: 227
+        y: 896
+        width: 227
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c93907658e7367e4f877607990e29001
+      internalID: -1319708170
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fire_Sprite-Photoroom_12
+      rect:
+        serializedVersion: 2
+        x: 454
+        y: 896
+        width: 227
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b2bd801c905be71448ccabfdd482e31b
+      internalID: 742782895
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fire_Sprite-Photoroom_13
+      rect:
+        serializedVersion: 2
+        x: 681
+        y: 896
+        width: 227
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7f6de31b419446141b85db05ec41105d
+      internalID: -1305320460
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fire_Sprite-Photoroom_14
+      rect:
+        serializedVersion: 2
+        x: 908
+        y: 896
+        width: 227
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7a87d4f5df22319489d6944ef47a2d38
+      internalID: -193937263
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fire_Sprite-Photoroom_15
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 768
+        width: 227
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ce40e8e9524dcae4f9e760c5f1a3d4e2
+      internalID: 460611917
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fire_Sprite-Photoroom_16
+      rect:
+        serializedVersion: 2
+        x: 227
+        y: 768
+        width: 227
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f0f8c09439df59f429dc1f26f2f6e289
+      internalID: 2113657909
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fire_Sprite-Photoroom_17
+      rect:
+        serializedVersion: 2
+        x: 454
+        y: 768
+        width: 227
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 858a576845bb0f040bec244bbdbacf49
+      internalID: 214587847
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fire_Sprite-Photoroom_18
+      rect:
+        serializedVersion: 2
+        x: 681
+        y: 768
+        width: 227
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8a32e585b7edf014a85ee20d06701576
+      internalID: 994380633
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fire_Sprite-Photoroom_19
+      rect:
+        serializedVersion: 2
+        x: 908
+        y: 768
+        width: 227
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2e3738318f01fba41b53788ef8468479
+      internalID: 1403826464
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fire_Sprite-Photoroom_20
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 640
+        width: 227
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1a604e6b717115f409da3ca294067b0d
+      internalID: 2003613491
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fire_Sprite-Photoroom_21
+      rect:
+        serializedVersion: 2
+        x: 227
+        y: 640
+        width: 227
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 824fc6eb60bc78144ba9aac3dc8ac3fb
+      internalID: -1826481193
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fire_Sprite-Photoroom_22
+      rect:
+        serializedVersion: 2
+        x: 454
+        y: 640
+        width: 227
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b44c5fd5767706847b84bf9f25a56f19
+      internalID: 830715745
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fire_Sprite-Photoroom_23
+      rect:
+        serializedVersion: 2
+        x: 681
+        y: 640
+        width: 227
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9e76e525272011e41a0015c308aac4dc
+      internalID: -137961838
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fire_Sprite-Photoroom_24
+      rect:
+        serializedVersion: 2
+        x: 908
+        y: 640
+        width: 227
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 01290f6b392041e4f9d69a05976df670
+      internalID: 998271585
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fire_Sprite-Photoroom_25
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 512
+        width: 227
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eda41edd940e92246a9bcf149a4fa93f
+      internalID: 1098966920
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fire_Sprite-Photoroom_26
+      rect:
+        serializedVersion: 2
+        x: 227
+        y: 512
+        width: 227
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 41753fbf33591f546826fd7cba64079c
+      internalID: 1876261186
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fire_Sprite-Photoroom_27
+      rect:
+        serializedVersion: 2
+        x: 454
+        y: 512
+        width: 227
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e64cd5b26f404a0479dca07b7529d215
+      internalID: -358713892
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fire_Sprite-Photoroom_28
+      rect:
+        serializedVersion: 2
+        x: 681
+        y: 512
+        width: 227
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 745bbae14147a254c904355dbe97a6af
+      internalID: 2133761592
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fire_Sprite-Photoroom_29
+      rect:
+        serializedVersion: 2
+        x: 908
+        y: 512
+        width: 227
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9f14de3419469c1479214ecc8b5d241e
+      internalID: -1931998161
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fire_Sprite-Photoroom_30
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 384
+        width: 227
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 132082617b5f2e544b0f2941410a9ef3
+      internalID: -1084890902
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fire_Sprite-Photoroom_31
+      rect:
+        serializedVersion: 2
+        x: 227
+        y: 384
+        width: 227
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ceedc885e4eebf042a36dcb6a367f639
+      internalID: -878367566
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fire_Sprite-Photoroom_32
+      rect:
+        serializedVersion: 2
+        x: 454
+        y: 384
+        width: 227
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ca2dbedce3a88ec43bfad9aafa4863fa
+      internalID: 27392826
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fire_Sprite-Photoroom_33
+      rect:
+        serializedVersion: 2
+        x: 681
+        y: 384
+        width: 227
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9211e287a95fbf742908ee3ad98e19b9
+      internalID: 1793730688
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fire_Sprite-Photoroom_34
+      rect:
+        serializedVersion: 2
+        x: 908
+        y: 384
+        width: 227
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 172d469c25034784596e27f9950017df
+      internalID: 845075815
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fire_Sprite-Photoroom_35
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 256
+        width: 227
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7fbb577847e56d148ab42ec27c175796
+      internalID: 1437204952
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fire_Sprite-Photoroom_36
+      rect:
+        serializedVersion: 2
+        x: 227
+        y: 256
+        width: 227
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 52fabc1a4cce85042959a83d1ab3f2bf
+      internalID: -134766602
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fire_Sprite-Photoroom_37
+      rect:
+        serializedVersion: 2
+        x: 454
+        y: 256
+        width: 227
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 43f9381e42896ff44ad81366f9653584
+      internalID: -1857238709
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fire_Sprite-Photoroom_38
+      rect:
+        serializedVersion: 2
+        x: 681
+        y: 256
+        width: 227
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 247d020e6a0ea574caea779ee2ffb487
+      internalID: 404923086
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fire_Sprite-Photoroom_39
+      rect:
+        serializedVersion: 2
+        x: 908
+        y: 256
+        width: 227
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c4660a68244a14646bc8c27abd7b60ad
+      internalID: -507573461
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fire_Sprite-Photoroom_40
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 128
+        width: 227
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4279728c0c86c484aa31982c50282cdc
+      internalID: 1159501267
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fire_Sprite-Photoroom_41
+      rect:
+        serializedVersion: 2
+        x: 227
+        y: 128
+        width: 227
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 62c78db634da47b4b97669680a126151
+      internalID: -1419948022
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fire_Sprite-Photoroom_42
+      rect:
+        serializedVersion: 2
+        x: 454
+        y: 128
+        width: 227
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1f6e73c7803fa5049916c0faed915f24
+      internalID: -1926698282
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fire_Sprite-Photoroom_43
+      rect:
+        serializedVersion: 2
+        x: 681
+        y: 128
+        width: 227
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0388ca6208bea4b43b13f5813d61e7cc
+      internalID: 1671554548
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fire_Sprite-Photoroom_44
+      rect:
+        serializedVersion: 2
+        x: 908
+        y: 128
+        width: 227
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a6e632809eb12f7479d8caa07f0ff5a6
+      internalID: -976000305
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fire_Sprite-Photoroom_45
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 227
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ee77864fbfa9a1f4fba9a22fe8746312
+      internalID: -361141968
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fire_Sprite-Photoroom_46
+      rect:
+        serializedVersion: 2
+        x: 227
+        y: 0
+        width: 227
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 319802b20778be14f8d6ff76fff6a5c4
+      internalID: -134189125
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fire_Sprite-Photoroom_47
+      rect:
+        serializedVersion: 2
+        x: 454
+        y: 0
+        width: 227
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0809f221b864ac046ac98494ec801c34
+      internalID: -699787301
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fire_Sprite-Photoroom_48
+      rect:
+        serializedVersion: 2
+        x: 681
+        y: 0
+        width: 227
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 90b476c73c5678e4ebc66a7fe6ea2057
+      internalID: 1473538670
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fire_Sprite-Photoroom_49
+      rect:
+        serializedVersion: 2
+        x: 908
+        y: 0
+        width: 227
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cf7ae50454ec3eb4ab41f6b2c16fd39f
+      internalID: 1650581023
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":5.0,"y":10.0},"gridSpriteSize":{"x":227.0,"y":128.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":2,"keepEmptyRects":false,"isAlternate":false}'
+    nameFileIdTable:
+      Fire_Sprite-Photoroom_0: 7300508732270459624
+      Fire_Sprite-Photoroom_1: -4863635580782470953
+      Fire_Sprite-Photoroom_10: -1444687265
+      Fire_Sprite-Photoroom_11: -1319708170
+      Fire_Sprite-Photoroom_12: 742782895
+      Fire_Sprite-Photoroom_13: -1305320460
+      Fire_Sprite-Photoroom_14: -193937263
+      Fire_Sprite-Photoroom_15: 460611917
+      Fire_Sprite-Photoroom_16: 2113657909
+      Fire_Sprite-Photoroom_17: 214587847
+      Fire_Sprite-Photoroom_18: 994380633
+      Fire_Sprite-Photoroom_19: 1403826464
+      Fire_Sprite-Photoroom_2: -7622567045030121423
+      Fire_Sprite-Photoroom_20: 2003613491
+      Fire_Sprite-Photoroom_21: -1826481193
+      Fire_Sprite-Photoroom_22: 830715745
+      Fire_Sprite-Photoroom_23: -137961838
+      Fire_Sprite-Photoroom_24: 998271585
+      Fire_Sprite-Photoroom_25: 1098966920
+      Fire_Sprite-Photoroom_26: 1876261186
+      Fire_Sprite-Photoroom_27: -358713892
+      Fire_Sprite-Photoroom_28: 2133761592
+      Fire_Sprite-Photoroom_29: -1931998161
+      Fire_Sprite-Photoroom_3: 2697997753377421185
+      Fire_Sprite-Photoroom_30: -1084890902
+      Fire_Sprite-Photoroom_31: -878367566
+      Fire_Sprite-Photoroom_32: 27392826
+      Fire_Sprite-Photoroom_33: 1793730688
+      Fire_Sprite-Photoroom_34: 845075815
+      Fire_Sprite-Photoroom_35: 1437204952
+      Fire_Sprite-Photoroom_36: -134766602
+      Fire_Sprite-Photoroom_37: -1857238709
+      Fire_Sprite-Photoroom_38: 404923086
+      Fire_Sprite-Photoroom_39: -507573461
+      Fire_Sprite-Photoroom_4: 6432078829456292569
+      Fire_Sprite-Photoroom_40: 1159501267
+      Fire_Sprite-Photoroom_41: -1419948022
+      Fire_Sprite-Photoroom_42: -1926698282
+      Fire_Sprite-Photoroom_43: 1671554548
+      Fire_Sprite-Photoroom_44: -976000305
+      Fire_Sprite-Photoroom_45: -361141968
+      Fire_Sprite-Photoroom_46: -134189125
+      Fire_Sprite-Photoroom_47: -699787301
+      Fire_Sprite-Photoroom_48: 1473538670
+      Fire_Sprite-Photoroom_49: 1650581023
+      Fire_Sprite-Photoroom_5: 4800264845787478565
+      Fire_Sprite-Photoroom_6: 1772741564573754770
+      Fire_Sprite-Photoroom_7: -1300778568127588625
+      Fire_Sprite-Photoroom_8: 1458185937
+      Fire_Sprite-Photoroom_9: 2136270932
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
