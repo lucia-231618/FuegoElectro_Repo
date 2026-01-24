@@ -27,16 +27,31 @@ public class PlayerController : MonoBehaviour
     private bool isHurt = false;
     private bool isDead = false;
 
+    [Header("Hitbox")]
+    [SerializeField] private GameObject hitboxPrefab;
+    [SerializeField] private Transform attackPoint;
+    [SerializeField] private int swordDamage = 10;
+    [SerializeField] private int thunderDamage = 15;
+
+    private GameObject currentHitbox; // Referencia a la hitbox activa
+
     void Start()
     {
         playerRb = GetComponent<Rigidbody2D>();
         anim = GetComponent<Animator>();
         currentHealth = maxHealth;
+
+        // Cleanup: Destruye cualquier hitbox residual al iniciar
+        if (currentHitbox != null)
+        {
+            Destroy(currentHitbox);
+            currentHitbox = null;
+        }
+        // Nota: Si hay hitboxes sueltas en la escena, bórralas manualmente de la jerarquía
     }
 
     void Update()
     {
-        // Detectar inputs
         horizontalInput =
             (Keyboard.current.aKey.isPressed || Keyboard.current.leftArrowKey.isPressed ? -1 : 0) +
             (Keyboard.current.dKey.isPressed || Keyboard.current.rightArrowKey.isPressed ? 1 : 0);
@@ -45,13 +60,10 @@ public class PlayerController : MonoBehaviour
             (Keyboard.current.wKey.isPressed || Keyboard.current.upArrowKey.isPressed ? 1 :
             (Keyboard.current.sKey.isPressed || Keyboard.current.downArrowKey.isPressed ? -1 : 0));
 
-        // Detectar suelo
         isGrounded = Physics2D.OverlapCircle(groundCheck.transform.position, 0.1f, groundLayer);
 
-        // Llamar a funciones de movimiento
         HandleMovement();
         HandleJump();
-        //HandleClimb();
         HandleAttack();
     }
 
@@ -61,7 +73,6 @@ public class PlayerController : MonoBehaviour
 
         playerRb.linearVelocity = new Vector2(horizontalInput * speed, playerRb.linearVelocity.y);
 
-        // Flip
         if (horizontalInput > 0 && !isFacingRight) Flip();
         else if (horizontalInput < 0 && isFacingRight) Flip();
 
@@ -78,26 +89,6 @@ public class PlayerController : MonoBehaviour
             playerRb.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse);
     }
 
-    //private void HandleClimb()
-    //{
-    //    if (!onLadder)
-    //    {
-    //        isClimbing = false;
-    //        anim.SetBool("Climbing", false);
-    //        return;
-    //    }
-
-    //    isClimbing = true;
-    //    playerRb.linearVelocity = new Vector2(horizontalInput * speed, verticalInput * speed);
-    //    anim.SetBool("Climbing", verticalInput != 0);
-
-    //    if (onLadder)
-    //        playerRb.gravityScale = 0;
-    //    else
-    //        playerRb.gravityScale = 1;
-
-    //}
-
     private void HandleAttack()
     {
         if (isDead || isHurt || isClimbing) return;
@@ -105,12 +96,53 @@ public class PlayerController : MonoBehaviour
         if (Mouse.current.leftButton.wasPressedThisFrame)
         {
             anim.SetTrigger("Attack_Sword");
+            // La hitbox se crea desde el Animation Event al inicio
         }
         if (Mouse.current.rightButton.wasPressedThisFrame)
         {
             anim.SetTrigger("Attack_Thunder");
+            // Lo mismo para trueno
         }
     }
+
+    // Método para Animation Event al INICIO de "Attack_Sword"
+    public void CreateHitbox()
+    {
+        if (hitboxPrefab == null || attackPoint == null)
+        {
+            Debug.LogError("hitboxPrefab o attackPoint no asignados!");
+            return;
+        }
+
+        // Destruye la hitbox anterior si existe
+        if (currentHitbox != null)
+        {
+            Destroy(currentHitbox);
+        }
+
+        currentHitbox = Instantiate(hitboxPrefab, attackPoint.position, Quaternion.identity);
+        currentHitbox.transform.parent = attackPoint;
+
+        Hitbox hitboxScript = currentHitbox.GetComponent<Hitbox>();
+        if (hitboxScript != null)
+        {
+            hitboxScript.damage = swordDamage;
+            hitboxScript.ResetDamage();
+        }
+
+        Debug.Log("Hitbox activada al inicio de Attack_Sword");
+    }
+
+    public void DestroyHitbox()
+    {
+        if (currentHitbox != null)
+        {
+            Destroy(currentHitbox);
+            currentHitbox = null;
+            Debug.Log("Hitbox desactivada al final de Attack_Sword");
+        }
+    }
+
 
     private void Flip()
     {
@@ -118,6 +150,35 @@ public class PlayerController : MonoBehaviour
         Vector3 scale = transform.localScale;
         scale.x *= -1;
         transform.localScale = scale;
+    }
+
+    public void TakeDamage(int damage)
+    {
+        if (isDead) return;
+
+        currentHealth -= damage;
+        isHurt = true;
+        anim.SetTrigger("Hurt");
+        Debug.Log("Jugador recibió " + damage + " de daño. Salud: " + currentHealth);
+
+        Invoke("ResetHurt", 0.5f);
+
+        if (currentHealth <= 0)
+        {
+            Die();
+        }
+    }
+
+    private void ResetHurt()
+    {
+        isHurt = false;
+    }
+
+    private void Die()
+    {
+        isDead = true;
+        anim.SetTrigger("Death");
+        Debug.Log("Jugador muerto");
     }
 
     private void OnTriggerEnter2D(Collider2D collision)

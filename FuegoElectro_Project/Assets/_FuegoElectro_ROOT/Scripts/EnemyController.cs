@@ -48,27 +48,27 @@ public class EnemyController : MonoBehaviour
         spriteRenderer = GetComponent<SpriteRenderer>();
         if (spriteRenderer == null)
         {
-            Debug.LogError("No se encontró SpriteRenderer en " + gameObject.name + ". Asegúrate de que sea un sprite. El flippeo no funcionará.");
+            //Debug.LogError("No se encontró SpriteRenderer en " + gameObject.name + ". Asegúrate de que sea un sprite. El flippeo no funcionará.");
         }
         else
         {
             // Verificar escala inicial (debe ser positiva en X)
             if (transform.localScale.x < 0)
             {
-                Debug.LogWarning(gameObject.name + " tiene escala X negativa. Esto puede invertir el flippeo. Corrígelo en el Inspector.");
+                //Debug.LogWarning(gameObject.name + " tiene escala X negativa. Esto puede invertir el flippeo. Corrígelo en el Inspector.");
             }
 
             // Flip inicial: Asumiendo que el sprite mira a la derecha por defecto
             expectedFlipX = !movingRight;
             spriteRenderer.flipX = expectedFlipX;
-            Debug.Log(gameObject.name + " - Flip inicial: FlipX = " + spriteRenderer.flipX);
+            //Debug.Log(gameObject.name + " - Flip inicial: FlipX = " + spriteRenderer.flipX);
         }
 
         // Encontrar al jugador por tag (asegúrate de que el jugador tenga el tag "Player")
         player = GameObject.FindGameObjectWithTag("Player")?.transform;
         if (player == null)
         {
-            Debug.LogError("No se encontró un objeto con tag 'Player'. Asegúrate de etiquetarlo correctamente.");
+            //Debug.LogError("No se encontró un objeto con tag 'Player'. Asegúrate de etiquetarlo correctamente.");
         }
     }
 
@@ -90,7 +90,7 @@ public class EnemyController : MonoBehaviour
     {
         if (spriteRenderer != null && spriteRenderer.flipX != expectedFlipX)
         {
-            Debug.LogWarning(gameObject.name + " - FlipX cambió por Animator a " + spriteRenderer.flipX + ". Forzando a " + expectedFlipX);
+            //Debug.LogWarning(gameObject.name + " - FlipX cambió por Animator a " + spriteRenderer.flipX + ". Forzando a " + expectedFlipX);
             spriteRenderer.flipX = expectedFlipX;
         }
     }
@@ -113,11 +113,11 @@ public class EnemyController : MonoBehaviour
             if (spriteRenderer != null)
             {
                 spriteRenderer.flipX = expectedFlipX;
-                Debug.Log(gameObject.name + " - Flippeando en límite. Posición: " + transform.position.x + ", MovingRight: " + movingRight + ", FlipX: " + spriteRenderer.flipX);
+                //Debug.Log(gameObject.name + " - Flippeando en límite. Posición: " + transform.position.x + ", MovingRight: " + movingRight + ", FlipX: " + spriteRenderer.flipX);
             }
             else
             {
-                Debug.LogWarning("SpriteRenderer es null en " + gameObject.name + ". No se puede flippear.");
+                //Debug.LogWarning("SpriteRenderer es null en " + gameObject.name + ". No se puede flippear.");
             }
         }
 
