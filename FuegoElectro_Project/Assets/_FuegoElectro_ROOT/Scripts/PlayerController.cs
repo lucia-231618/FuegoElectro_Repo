@@ -11,6 +11,7 @@ public class PlayerController : MonoBehaviour
     [Header("Movement")]
     public float speed = 5f;
     public float jumpForce = 10f;
+    public float climbSpeed = 3f; // Velocidad de escalada
 
     private bool isFacingRight = true;
     private bool isClimbing = false;
@@ -62,6 +63,7 @@ public class PlayerController : MonoBehaviour
 
         isGrounded = Physics2D.OverlapCircle(groundCheck.transform.position, 0.1f, groundLayer);
 
+        HandleClimbing(); // Llamar antes de movimiento para priorizar escalada
         HandleMovement();
         HandleJump();
         HandleAttack();
@@ -89,6 +91,23 @@ public class PlayerController : MonoBehaviour
             playerRb.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse);
     }
 
+    private void HandleClimbing()
+    {
+        if (onLadder && verticalInput != 0)
+        {
+            isClimbing = true;
+            playerRb.gravityScale = 0; // Desactiva gravedad mientras escala
+            playerRb.linearVelocity = new Vector2(0, verticalInput * climbSpeed);
+            anim.SetBool("Climbing", true);
+        }
+        else
+        {
+            isClimbing = false;
+            playerRb.gravityScale = 1; // Restaura gravedad
+            anim.SetBool("Climbing", false);
+        }
+    }
+
     private void HandleAttack()
     {
         if (isDead || isHurt || isClimbing) return;
@@ -106,7 +125,7 @@ public class PlayerController : MonoBehaviour
     }
 
     // Método para Animation Event al INICIO de "Attack_Sword"
-    public void CreateHitbox()
+    public void CreateHitboxSword()
     {
         if (hitboxPrefab == null || attackPoint == null)
         {
@@ -130,19 +149,47 @@ public class PlayerController : MonoBehaviour
             hitboxScript.ResetDamage();
         }
 
-        Debug.Log("Hitbox activada al inicio de Attack_Sword");
+        Debug.Log("Hitbox Sword activada al inicio de Attack_Sword");
     }
 
+    // Método para Animation Event al INICIO de "Attack_Thunder"
+    public void CreateHitboxThunder()
+    {
+        if (hitboxPrefab == null || attackPoint == null)
+        {
+            Debug.LogError("hitboxPrefab o attackPoint no asignados!");
+            return;
+        }
+
+        // Destruye la hitbox anterior si existe
+        if (currentHitbox != null)
+        {
+            Destroy(currentHitbox);
+        }
+
+        currentHitbox = Instantiate(hitboxPrefab, attackPoint.position, Quaternion.identity);
+        currentHitbox.transform.parent = attackPoint;
+
+        Hitbox hitboxScript = currentHitbox.GetComponent<Hitbox>();
+        if (hitboxScript != null)
+        {
+            hitboxScript.damage = thunderDamage;
+            hitboxScript.ResetDamage();
+        }
+
+        Debug.Log("Hitbox Thunder activada al inicio de Attack_Thunder");
+    }
+
+    // Método para Animation Event al FINAL de cualquier ataque (Sword o Thunder)
     public void DestroyHitbox()
     {
         if (currentHitbox != null)
         {
             Destroy(currentHitbox);
             currentHitbox = null;
-            Debug.Log("Hitbox desactivada al final de Attack_Sword");
+            Debug.Log("Hitbox desactivada al final del ataque");
         }
     }
-
 
     private void Flip()
     {
@@ -161,7 +208,8 @@ public class PlayerController : MonoBehaviour
         anim.SetTrigger("Hurt");
         Debug.Log("Jugador recibió " + damage + " de daño. Salud: " + currentHealth);
 
-        Invoke("ResetHurt", 0.5f);
+        // Removido Invoke; ahora usa Animation Event al final de la animación "Hurt"
+        // Agrega un Animation Event en la animación "Hurt" que llame a ResetHurt
 
         if (currentHealth <= 0)
         {
@@ -169,9 +217,11 @@ public class PlayerController : MonoBehaviour
         }
     }
 
-    private void ResetHurt()
+    // Método para Animation Event al final de la animación "Hurt"
+    public void ResetHurt()
     {
         isHurt = false;
+        Debug.Log("Jugador reset hurt");
     }
 
     private void Die()

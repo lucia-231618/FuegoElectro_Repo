@@ -1,24 +1,17 @@
-ï»¿using UnityEngine;
+using UnityEngine;
 
-public class EnemyController : MonoBehaviour
+public class AggressiveEnemyController : MonoBehaviour
 {
-    // Enum para los tipos de enemigo
-    public enum EnemyType { Aggressive, Defensive }
-
-    // Tipo de enemigo (configurable en el Inspector)
-    public EnemyType enemyType;
-
     // Variables de movimiento
     public float speed = 2f; // Velocidad de movimiento
     public float range = 5f; // Rango de patrulla
-    private Vector3 startPosition; // PosiciÃ³n inicial
-    private bool movingRight = true; // DirecciÃ³n de movimiento
+    private Vector3 startPosition; // Posición inicial
+    private bool movingRight = true; // Dirección de movimiento
+    private bool isChasing = false; // Flag para saber si está persiguiendo
 
     // Animator y animaciones
     public Animator animator;
     [SerializeField] private string walkingAnim = "Walking"; // Bool para caminar
-    [SerializeField] private string flyingAnim = "Flying"; // Bool para volar
-    public bool isFlying = false; // Si es volador
 
     // Referencia al SpriteRenderer para flippeo
     private SpriteRenderer spriteRenderer;
@@ -26,12 +19,12 @@ public class EnemyController : MonoBehaviour
     // Referencia al jugador
     private Transform player;
 
-    // Variables de detecciÃ³n y ataque
-    public float visionRange = 10f; // Rango de visiÃ³n para agresivos
+    // Variables de detección y ataque
+    public float visionRange = 10f; // Rango de visión
     public float attackRange = 2f; // Rango de ataque
-    private bool isAttacking = false; // Flag para evitar ataques mÃºltiples
+    private bool isAttacking = false; // Flag para evitar ataques múltiples
+    private float attackCooldown = 0f; // Cooldown entre ataques
     private bool isDead = false; // Flag para estado muerto
-    private bool hasBeenAttacked = false; // Flag para defensivos
 
     // Salud
     [SerializeField] private int health = 100; // Editable en Inspector
@@ -41,14 +34,14 @@ public class EnemyController : MonoBehaviour
 
     void Start()
     {
-        // Guardar posiciÃ³n inicial
+        // Guardar posición inicial
         startPosition = transform.position;
 
         // Obtener el SpriteRenderer
         spriteRenderer = GetComponent<SpriteRenderer>();
         if (spriteRenderer == null)
         {
-            Debug.LogError("No se encontrÃ³ SpriteRenderer en " + gameObject.name);
+            Debug.LogError("No se encontró SpriteRenderer en " + gameObject.name);
         }
         else
         {
@@ -64,7 +57,7 @@ public class EnemyController : MonoBehaviour
         player = GameObject.FindGameObjectWithTag("Player")?.transform;
         if (player == null)
         {
-            Debug.LogError("No se encontrÃ³ un objeto con tag 'Player'");
+            Debug.LogError("No se encontró un objeto con tag 'Player'");
         }
     }
 
@@ -72,12 +65,30 @@ public class EnemyController : MonoBehaviour
     {
         if (isDead || player == null) return;
 
-        if (!isAttacking)
+        // Decrementar cooldown
+        if (attackCooldown > 0)
         {
-            Move();
+            attackCooldown -= Time.deltaTime;
         }
 
-        CheckForAttack();
+        float distToPlayer = Vector3.Distance(transform.position, player.position);
+
+        // Determinar si está persiguiendo
+        isChasing = (distToPlayer <= visionRange && distToPlayer > attackRange);
+
+        if (!isAttacking)
+        {
+            if (isChasing)
+            {
+                MoveTowardsPlayer();
+            }
+            else
+            {
+                Move();
+            }
+        }
+
+        CheckForAttack(distToPlayer);
     }
 
     void LateUpdate()
@@ -104,30 +115,17 @@ public class EnemyController : MonoBehaviour
             }
         }
 
-        // AnimaciÃ³n
-        animator.SetBool("Walking", !isFlying);
+        // Animación: siempre caminando
+        animator.SetBool(walkingAnim, true);
     }
 
-    private void CheckForAttack()
+    private void CheckForAttack(float distToPlayer)
     {
-        float distToPlayer = Vector3.Distance(transform.position, player.position);
-        Debug.Log(gameObject.name + " - Distancia: " + distToPlayer + ", Tipo: " + enemyType + ", isAttacking: " + isAttacking + ", hasBeenAttacked: " + hasBeenAttacked);
+        Debug.Log(gameObject.name + " - Distancia: " + distToPlayer + ", isAttacking: " + isAttacking + ", attackCooldown: " + attackCooldown);
 
-        if (enemyType == EnemyType.Aggressive)
+        if (distToPlayer <= attackRange && attackCooldown <= 0)
         {
-            if (distToPlayer <= attackRange)
-            {
-                Debug.Log(gameObject.name + " - Atacando (agresivo)");
-                Attack();
-            }
-            else if (distToPlayer <= visionRange && !isAttacking)
-            {
-                MoveTowardsPlayer();
-            }
-        }
-        else if (enemyType == EnemyType.Defensive && hasBeenAttacked && distToPlayer <= attackRange)
-        {
-            Debug.Log(gameObject.name + " - Atacando (defensivo)");
+            Debug.Log(gameObject.name + " - Atacando (agresivo)");
             Attack();
         }
     }
@@ -135,28 +133,28 @@ public class EnemyController : MonoBehaviour
     private void MoveTowardsPlayer()
     {
         Vector3 dir = (player.position - transform.position).normalized;
+        // Mover solo en X, ya que nunca vuela
         transform.Translate(new Vector3(dir.x, 0, 0) * speed * Time.deltaTime);
 
         expectedFlipX = dir.x < 0;
         spriteRenderer.flipX = expectedFlipX;
 
-        animator.SetBool("Walking", true);
+        // Animación: siempre caminando
+        animator.SetBool(walkingAnim, true);
     }
 
     private void Attack()
     {
-        if (!isAttacking)
+        if (!isAttacking && attackCooldown <= 0)
         {
             isAttacking = true;
+            attackCooldown = 2f; // Cooldown de 2 segundos entre ataques
             animator.SetTrigger("Attack");
             Debug.Log(gameObject.name + " - Trigger 'Attack' seteado. Animator: " + (animator != null ? "OK" : "NULL"));
-
-            // NO daÃ±ar aquÃ­; se hace desde Animation Event
-            Invoke("ResetAttack", 1f);
         }
     }
 
-    // MÃ©todo para Animation Event: daÃ±a durante la animaciÃ³n
+    // Método para Animation Event: daña durante la animación
     public void DealDamage()
     {
         if (player != null)
@@ -165,12 +163,13 @@ public class EnemyController : MonoBehaviour
             if (playerScript != null)
             {
                 playerScript.TakeDamage(10);
-                Debug.Log(gameObject.name + " - DaÃ±o infligido al jugador durante animaciÃ³n");
+                Debug.Log(gameObject.name + " - Daño infligido al jugador durante animación");
             }
         }
     }
 
-    private void ResetAttack()
+    // Método para Animation Event: resetea el ataque al final de la animación
+    public void ResetAttack()
     {
         isAttacking = false;
         Debug.Log(gameObject.name + " - ResetAttack llamado, isAttacking = false");
@@ -181,22 +180,10 @@ public class EnemyController : MonoBehaviour
         if (isDead) return;
 
         health -= damage;
-        animator.SetTrigger("Hurt");
-        Debug.Log(gameObject.name + " - RecibiÃ³ " + damage + " daÃ±o, salud: " + health);
+        Debug.Log(gameObject.name + " - Recibió " + damage + " daño, salud: " + health);
 
-        if (enemyType == EnemyType.Defensive)
-        {
-            hasBeenAttacked = true;
-            Debug.Log(gameObject.name + " - hasBeenAttacked seteado a TRUE (defensivo activado)");
-
-            // Devuelve el ataque si estÃ¡ en rango
-            float distToPlayer = Vector3.Distance(transform.position, player.position);
-            if (distToPlayer <= attackRange && !isAttacking)
-            {
-                Debug.Log(gameObject.name + " - Defensivo devuelve el ataque");
-                Attack();
-            }
-        }
+        // Agresivos no hacen animación de Hurt ni responden al daño
+        // Solo pierden vida
 
         if (health <= 0)
         {
