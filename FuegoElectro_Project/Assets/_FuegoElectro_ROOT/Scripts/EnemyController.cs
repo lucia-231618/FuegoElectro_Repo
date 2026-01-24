@@ -76,12 +76,14 @@ public class EnemyController : MonoBehaviour
     {
         if (isDead || player == null) return;
 
-        // Movimiento de patrulla
-        Move();
+        if (!isAttacking)
+        {
+            Move();
+        }
 
-        // Verificar si debe atacar
         CheckForAttack();
     }
+
 
     // Forzar flipX al final del frame para prevenir sobrescrituras del Animator
     void LateUpdate()
@@ -122,11 +124,11 @@ public class EnemyController : MonoBehaviour
         // Activar animación de movimiento (Walking o Flying)
         if (!isFlying)
         {
-            animator.SetTrigger(walkingAnim);
+            animator.SetBool("Walking", true);
         }
         else
         {
-            animator.SetTrigger(flyingAnim);
+            animator.SetBool("Walking", false);
         }
     }
 
@@ -135,17 +137,35 @@ public class EnemyController : MonoBehaviour
     {
         float distToPlayer = Vector3.Distance(transform.position, player.position);
 
-        // Enemigos agresivos: atacan si ven al jugador dentro del rango de visión
-        if (enemyType == EnemyType.Aggressive && distToPlayer <= visionRange)
+        if (enemyType == EnemyType.Aggressive)
         {
-            Attack();
+            if (distToPlayer <= attackRange)
+            {
+                Attack();
+            }
+            else if (distToPlayer <= visionRange && !isAttacking)
+            {
+                MoveTowardsPlayer();
+            }
         }
-        // Enemigos defensivos: atacan solo si han sido atacados y el jugador está en rango de ataque
         else if (enemyType == EnemyType.Defensive && hasBeenAttacked && distToPlayer <= attackRange)
         {
             Attack();
         }
     }
+
+    private void MoveTowardsPlayer()
+    {
+        Vector3 dir = (player.position - transform.position).normalized;
+        transform.Translate(new Vector3(dir.x, 0, 0) * speed * Time.deltaTime);
+
+        // Flip
+        expectedFlipX = dir.x < 0;
+        spriteRenderer.flipX = expectedFlipX;
+
+        animator.SetBool("Walking", true);
+    }
+
 
     // Método de ataque
     private void Attack()
