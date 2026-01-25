@@ -26,12 +26,14 @@ public class EnemyProjectile : MonoBehaviour
         }
     }
 
-    void Update()
-    {
-        // Mueve el proyectil en la dirección calculada
-        transform.Translate(direction * speed * Time.deltaTime);
-        Debug.Log("Proyectil moviéndose a: " + transform.position + ", dirección: " + direction);
-    }
+        void Update()
+        {
+            if (player != null)
+            {
+                direction = (player.position - transform.position).normalized;
+            }
+            transform.Translate(direction * speed * Time.deltaTime);
+        }
 
     private void OnTriggerEnter2D(Collider2D collision)
     {

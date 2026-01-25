@@ -19,15 +19,15 @@ public class Hitbox : MonoBehaviour
         {
             Debug.Log("Hitbox - ¡Golpeó a: " + collision.name + "!");
 
-            //// Verificar si es un enemigo agresivo
-            //AggressiveEnemyController aggressiveEnemy = collision.GetComponent<AggressiveEnemyController>();
-            //if (aggressiveEnemy != null)
-            //{
-            //    aggressiveEnemy.TakeDamage(damage);
-            //    hasDamaged = true;
-            //    Debug.Log("Hitbox - Daño aplicado a agresivo: " + collision.name);  // Log agregado
-            //    return;
-            //}
+            // Verificar si es un enemigo agresivo
+            AggressiveEnemyController aggressiveEnemy = collision.GetComponent<AggressiveEnemyController>();
+            if (aggressiveEnemy != null)
+            {
+                aggressiveEnemy.TakeDamage(damage);
+                hasDamaged = true;
+                Debug.Log("Hitbox - Daño aplicado a agresivo: " + collision.name);  // Log agregado
+                return;
+            }
 
             // Verificar si es un enemigo defensivo
             DefensiveEnemyController defensiveEnemy = collision.GetComponent<DefensiveEnemyController>();
