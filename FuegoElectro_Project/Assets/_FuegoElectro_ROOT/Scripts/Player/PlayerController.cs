@@ -11,16 +11,14 @@ public class PlayerController : MonoBehaviour
     [Header("Movement")]
     public float speed = 5f;
     public float jumpForce = 10f;
-    public float climbSpeed = 3f; // Velocidad de escalada
 
     private bool isFacingRight = true;
-    private bool isClimbing = false;
-    private bool onLadder = false;
 
     [Header("Ground")]
     [SerializeField] private GameObject groundCheck;
     [SerializeField] private LayerMask groundLayer;
     private bool isGrounded;
+    private bool wasGrounded; //Atterizaje (para las plataformas)
 
     [Header("Health")]
     public int maxHealth = 3;
@@ -30,11 +28,15 @@ public class PlayerController : MonoBehaviour
 
     [Header("Hitbox")]
     [SerializeField] private GameObject hitboxPrefab;
-    [SerializeField] private Transform attackPoint;
+    [SerializeField] private UnityEngine.Transform attackPoint;
     [SerializeField] private int swordDamage = 10;
     [SerializeField] private int thunderDamage = 15;
 
     private GameObject currentHitbox; // Referencia a la hitbox activa
+
+    // Variables para doble salto
+    private int jumpCount = 0;
+    private int maxJumps = 2; // Máximo de saltos (1 en suelo + 1 en aire)
 
     void Start()
     {
@@ -48,7 +50,6 @@ public class PlayerController : MonoBehaviour
             Destroy(currentHitbox);
             currentHitbox = null;
         }
-        // Nota: Si hay hitboxes sueltas en la escena, bórralas manualmente de la jerarquía
     }
 
     void Update()
@@ -61,9 +62,10 @@ public class PlayerController : MonoBehaviour
             (Keyboard.current.wKey.isPressed || Keyboard.current.upArrowKey.isPressed ? 1 :
             (Keyboard.current.sKey.isPressed || Keyboard.current.downArrowKey.isPressed ? -1 : 0));
 
+        // Actualiza wasGrounded antes de calcular isGrounded
+        wasGrounded = isGrounded;
         isGrounded = Physics2D.OverlapCircle(groundCheck.transform.position, 0.1f, groundLayer);
 
-        HandleClimbing(); // Llamar antes de movimiento para priorizar escalada
         HandleMovement();
         HandleJump();
         HandleAttack();
@@ -71,7 +73,7 @@ public class PlayerController : MonoBehaviour
 
     private void HandleMovement()
     {
-        if (isDead || isHurt || isClimbing) return;
+        if (isDead || isHurt) return;
 
         playerRb.linearVelocity = new Vector2(horizontalInput * speed, playerRb.linearVelocity.y);
 
@@ -83,34 +85,27 @@ public class PlayerController : MonoBehaviour
 
     private void HandleJump()
     {
-        if (isDead || isClimbing || isHurt) return;
+        if (isDead || isHurt) return;
+
+        // Resetea el contador de saltos SOLO cuando aterriza (pasa de no grounded a grounded)
+        if (!wasGrounded && isGrounded)
+        {
+            jumpCount = 0;
+        }
 
         anim.SetBool("Jumping", !isGrounded);
 
-        if (Keyboard.current.spaceKey.wasPressedThisFrame && isGrounded)
+        // Permite saltar si no ha alcanzado el máximo de saltos
+        if (Keyboard.current.spaceKey.wasPressedThisFrame && jumpCount < maxJumps)
+        {
             playerRb.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse);
-    }
-
-    private void HandleClimbing()
-    {
-        if (onLadder && verticalInput != 0)
-        {
-            isClimbing = true;
-            playerRb.gravityScale = 0; // Desactiva gravedad mientras escala
-            playerRb.linearVelocity = new Vector2(0, verticalInput * climbSpeed);
-            anim.SetBool("Climbing", true);
-        }
-        else
-        {
-            isClimbing = false;
-            playerRb.gravityScale = 1; // Restaura gravedad
-            anim.SetBool("Climbing", false);
+            jumpCount++; // Incrementa el contador
         }
     }
 
     private void HandleAttack()
     {
-        if (isDead || isHurt || isClimbing) return;
+        if (isDead || isHurt) return;
 
         if (Mouse.current.leftButton.wasPressedThisFrame)
         {
@@ -129,7 +124,6 @@ public class PlayerController : MonoBehaviour
     {
         if (hitboxPrefab == null || attackPoint == null)
         {
-            Debug.LogError("hitboxPrefab o attackPoint no asignados!");
             return;
         }
 
@@ -148,8 +142,6 @@ public class PlayerController : MonoBehaviour
             hitboxScript.damage = swordDamage;
             hitboxScript.ResetDamage();
         }
-
-        Debug.Log("Hitbox Sword activada al inicio de Attack_Sword");
     }
 
     // Método para Animation Event al INICIO de "Attack_Thunder"
@@ -157,7 +149,6 @@ public class PlayerController : MonoBehaviour
     {
         if (hitboxPrefab == null || attackPoint == null)
         {
-            Debug.LogError("hitboxPrefab o attackPoint no asignados!");
             return;
         }
 
@@ -176,18 +167,15 @@ public class PlayerController : MonoBehaviour
             hitboxScript.damage = thunderDamage;
             hitboxScript.ResetDamage();
         }
-
-        Debug.Log("Hitbox Thunder activada al inicio de Attack_Thunder");
     }
 
-    // Método para Animation Event al FINAL de cualquier ataque (Sword o Thunder)
+    // Método para Animation Event al FINAL de cualquier ataque (Sword or Thunder)
     public void DestroyHitbox()
     {
         if (currentHitbox != null)
         {
             Destroy(currentHitbox);
             currentHitbox = null;
-            Debug.Log("Hitbox desactivada al final del ataque");
         }
     }
 
@@ -206,10 +194,6 @@ public class PlayerController : MonoBehaviour
         currentHealth -= damage;
         isHurt = true;
         anim.SetTrigger("Hurt");
-        Debug.Log("Jugador recibió " + damage + " de daño. Salud: " + currentHealth);
-
-        // Removido Invoke; ahora usa Animation Event al final de la animación "Hurt"
-        // Agrega un Animation Event en la animación "Hurt" que llame a ResetHurt
 
         if (currentHealth <= 0)
         {
@@ -221,25 +205,20 @@ public class PlayerController : MonoBehaviour
     public void ResetHurt()
     {
         isHurt = false;
-        Debug.Log("Jugador reset hurt");
     }
 
     private void Die()
     {
         isDead = true;
         anim.SetTrigger("Death");
-        Debug.Log("Jugador muerto");
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.gameObject.layer == LayerMask.NameToLayer("Ladder"))
-            onLadder = true;
-    }
-
-    private void OnTriggerExit2D(Collider2D collision)
-    {
-        if (collision.gameObject.layer == LayerMask.NameToLayer("Ladder"))
-            onLadder = false;
+        // Si toca lava o pinchos (usando layer), muere
+        if (collision.gameObject.layer == LayerMask.NameToLayer("Lava"))
+        {
+            Die();
+        }
     }
 }
