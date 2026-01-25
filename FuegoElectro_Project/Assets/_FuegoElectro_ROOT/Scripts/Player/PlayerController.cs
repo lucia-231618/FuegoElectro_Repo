@@ -1,5 +1,6 @@
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.SceneManagement;
 
 public class PlayerController : MonoBehaviour
 {
@@ -18,13 +19,9 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private GameObject groundCheck;
     [SerializeField] private LayerMask groundLayer;
     private bool isGrounded;
-    private bool wasGrounded; //Atterizaje (para las plataformas)
+    private bool wasGrounded; // Atterizaje (para las plataformas)
 
-    [Header("Health")]
-    public int maxHealth = 3;
-    private int currentHealth;
-    private bool isHurt = false;
-    private bool isDead = false;
+    // Eliminado: Sistema de salud local (int). Ahora usa GameManager.
 
     [Header("Hitbox")]
     [SerializeField] private GameObject hitboxPrefab;
@@ -42,7 +39,8 @@ public class PlayerController : MonoBehaviour
     {
         playerRb = GetComponent<Rigidbody2D>();
         anim = GetComponent<Animator>();
-        currentHealth = maxHealth;
+
+        // Eliminado: currentHealth = maxHealth;
 
         // Cleanup: Destruye cualquier hitbox residual al iniciar
         if (currentHitbox != null)
@@ -73,7 +71,7 @@ public class PlayerController : MonoBehaviour
 
     private void HandleMovement()
     {
-        if (isDead || isHurt) return;
+        if (GameManager.Instance.playerHealth <= 0) return; // Usa GameManager para verificar muerte
 
         playerRb.linearVelocity = new Vector2(horizontalInput * speed, playerRb.linearVelocity.y);
 
@@ -85,7 +83,7 @@ public class PlayerController : MonoBehaviour
 
     private void HandleJump()
     {
-        if (isDead || isHurt) return;
+        if (GameManager.Instance.playerHealth <= 0) return; // Usa GameManager para verificar muerte
 
         // Resetea el contador de saltos SOLO cuando aterriza (pasa de no grounded a grounded)
         if (!wasGrounded && isGrounded)
@@ -105,7 +103,7 @@ public class PlayerController : MonoBehaviour
 
     private void HandleAttack()
     {
-        if (isDead || isHurt) return;
+        if (GameManager.Instance.playerHealth <= 0) return; // Usa GameManager para verificar muerte
 
         if (Mouse.current.leftButton.wasPressedThisFrame)
         {
@@ -187,30 +185,40 @@ public class PlayerController : MonoBehaviour
         transform.localScale = scale;
     }
 
+    // Modificado: Ahora usa GameManager para salud
     public void TakeDamage(int damage)
     {
-        if (isDead) return;
+        if (GameManager.Instance.playerHealth <= 0) return; // Evita daño si ya está muerto
 
-        currentHealth -= damage;
-        isHurt = true;
+        GameManager.Instance.playerHealth -= damage; // Reduce la salud global
         anim.SetTrigger("Hurt");
 
-        if (currentHealth <= 0)
-        {
-            Die();
-        }
+        // No llamas a Die() aquí; GameManager lo manejará automáticamente cuando playerHealth <= 0
     }
 
     // Método para Animation Event al final de la animación "Hurt"
     public void ResetHurt()
     {
-        isHurt = false;
+        // isHurt eliminado, ya no se usa
     }
 
+    // Modificado: Fuerza la muerte en GameManager (para lava o instakill)
     private void Die()
     {
-        isDead = true;
         anim.SetTrigger("Death");
+        GameManager.Instance.playerHealth = 0; // Fuerza la muerte en GameManager (opcional, para consistencia)
+        StartCoroutine(DelayedSceneChange());
+    }
+
+    // Nueva coroutine: Espera la animación + 2 segundos, luego cambia escena
+    private System.Collections.IEnumerator DelayedSceneChange()
+    {
+        // Espera la duración de la animación "Death"
+        AnimatorStateInfo stateInfo = anim.GetCurrentAnimatorStateInfo(0);
+        yield return new WaitForSeconds(stateInfo.length); // Espera solo la animación
+
+        // Carga la escena de derrota (cambio completo, reemplaza la actual)
+        SceneManager.LoadScene("DefeatScene"); // Cambia "DefeatScene" por el nombre exacto de tu escena
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -219,6 +227,20 @@ public class PlayerController : MonoBehaviour
         if (collision.gameObject.layer == LayerMask.NameToLayer("Lava"))
         {
             Die();
+        }
+
+        // Nuevo: Si toca una puerta (tag "Door"), cambia a la siguiente escena
+        if (collision.CompareTag("Door"))
+        {
+            int nextSceneIndex = SceneManager.GetActiveScene().buildIndex + 1;
+            if (nextSceneIndex < SceneManager.sceneCountInBuildSettings)
+            {
+                SceneManager.LoadScene(nextSceneIndex);
+            }
+            else
+            {
+                Debug.Log("No hay más escenas en Build Settings. Fin del juego o reinicio.");
+            }
         }
     }
 }

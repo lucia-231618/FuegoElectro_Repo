@@ -54,11 +54,7 @@ public class GameManager : MonoBehaviour
 
     private void PlayerDied()
     {
-        Debug.Log("Jugador ha muerto");
-        // Cargar escena de derrota additive
-        SceneController.Instance.LoadOverlay("DefeatScene");
-        // Pausar el juego mientras se muestra la escena
-        Time.timeScale = 0f;
+        playerHealth = Mathf.Clamp(playerHealth, 0, maxHealth);
     }
 
     // Método opcional para reiniciar variables al reintentar
